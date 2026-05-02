@@ -3,147 +3,393 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#d94f8c">
-<title>BloomFit Ultimate V9.3 Sport++</title>
+<title>BloomFit V10.15</title>
 <style>
-:root{--bg:#fff6fb;--bg2:#ffe8f3;--card:#ffffffee;--text:#2c1f2e;--muted:#7c647c;--a:#d94f8c;--b:#b95edb;--soft:#fff0f7;--border:#f1d1e1;--shadow:0 14px 34px #d94f8c22;--ok:#4e9c66;--warn:#d99a00;--bad:#d85b5b}
-body.sobre{--bg:#f6f7f8;--bg2:#e8edf0;--card:#fffffff2;--text:#17202a;--muted:#607080;--a:#2f6f73;--b:#3b4b59;--soft:#eef6f5;--border:#dce5e7;--shadow:0 14px 34px #1428321a}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 8% 0%,#ffd1e6,transparent 28%),radial-gradient(circle at 95% 0%,#ddd0ff,transparent 24%),linear-gradient(var(--bg),var(--bg2));font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);padding-bottom:88px}.app{max-width:1050px;margin:auto;padding:12px}.hero,.card{background:var(--card);border:1px solid #ffffffcc;border-radius:26px;box-shadow:var(--shadow);padding:16px}.hero{margin-bottom:12px;position:relative;overflow:hidden}.hero:after{content:"✦";position:absolute;right:20px;top:-8px;font-size:86px;color:var(--a);opacity:.16}h1{font-size:clamp(2rem,7vw,3.5rem);letter-spacing:-.06em;margin:0;line-height:.95}.brand,h2,.accent{color:var(--a)}h2{margin:0 0 12px;font-size:1.35rem}h3{margin:12px 0 8px}.muted,.tiny{color:var(--muted)}.tiny{font-size:.86rem;line-height:1.35}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}.s12{grid-column:span 12}.s8{grid-column:span 8}.s7{grid-column:span 7}.s6{grid-column:span 6}.s5{grid-column:span 5}.s4{grid-column:span 4}@media(max-width:850px){.s8,.s7,.s6,.s5,.s4{grid-column:span 12}.app{padding:9px}.hero,.card{border-radius:21px;padding:13px}h1{font-size:2.15rem}}
-label{font-weight:850;display:block;margin:10px 0 6px}input,select,textarea{width:100%;border:1px solid var(--border);border-radius:15px;padding:12px;background:white;color:var(--text);font-size:16px}textarea{min-height:86px}.row{display:grid;grid-template-columns:1fr 1fr;gap:9px}.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px}@media(max-width:640px){.row,.row3{grid-template-columns:1fr}}
-button{border:0;border-radius:16px;background:linear-gradient(135deg,var(--a),var(--b));color:white;font-weight:950;padding:12px 14px;font-size:1rem;cursor:pointer}button.sec{background:white;color:var(--a);border:1px solid var(--border);box-shadow:none}button.bad{background:white;color:var(--bad);border:1px solid #f2c2c2}.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}@media(max-width:640px){.btns button{flex:1 1 100%}}
-.pill,.macro{display:inline-block;border:1px solid var(--border);background:var(--soft);border-radius:999px;padding:7px 10px;margin:3px;color:var(--muted);font-weight:850;font-size:.84rem}.macro{border-radius:12px;color:var(--text)}.secpage{display:none}.secpage.on{display:block}.box,.day,.recipe,.work,.foodrow,.exerciseBlock{background:#ffffffb8;border:1px solid var(--border);border-radius:20px;padding:13px;margin:10px 0}.title{display:flex;justify-content:space-between;gap:8px;align-items:center;font-weight:1000;color:var(--a);flex-wrap:wrap}.metric{background:var(--soft);border:1px solid var(--border);border-radius:18px;padding:12px}.num{font-size:1.75rem;font-weight:1000;color:var(--a);letter-spacing:-.04em}.progress{height:14px;background:var(--border);border-radius:999px;overflow:hidden;margin:8px 0}.progress div{height:100%;background:linear-gradient(90deg,var(--a),var(--b));width:0%}.checks{display:grid;grid-template-columns:1fr 1fr;gap:8px}.check{background:var(--soft);border:1px solid var(--border);border-radius:15px;padding:10px;font-weight:800;display:flex;gap:8px}.check input{width:auto}@media(max-width:640px){.checks{grid-template-columns:1fr}}
-a{color:var(--a);font-weight:950;text-decoration:none;border-bottom:1px dashed var(--a);cursor:pointer}table{width:100%;border-collapse:collapse;font-size:.9rem}td,th{border-bottom:1px solid var(--border);padding:8px;text-align:left;vertical-align:top}th{color:var(--muted);font-size:.8rem}.bottom{position:fixed;left:50%;transform:translateX(-50%);bottom:8px;width:min(760px,calc(100vw - 12px));background:#fffffff2;border:1px solid var(--border);border-radius:22px;box-shadow:0 14px 38px #0002;display:grid;grid-template-columns:repeat(7,1fr);gap:3px;padding:6px;z-index:9}.nav{text-align:center;border-radius:16px;padding:7px 2px;color:var(--muted);font-weight:900;font-size:.62rem;cursor:pointer}.nav.on{background:linear-gradient(135deg,var(--a),var(--b));color:white}.nav span{display:block;font-size:1rem}
-.water{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.water button{width:42px;height:42px;padding:0;border-radius:50%;font-size:1.4rem}.cups{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}.cup{width:28px;height:38px;border:2px solid var(--border);border-radius:7px 7px 12px 12px;background:white;position:relative;overflow:hidden}.cup.filled:after{content:"";position:absolute;bottom:0;left:0;right:0;height:80%;background:linear-gradient(180deg,#bfe9ff,#7ec8ff)}.scaleBox{font-size:.82rem;color:var(--muted);display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:4px}.categoryBar{display:flex;gap:7px;overflow:auto;margin:8px 0}.cat{white-space:nowrap;border:1px solid var(--border);background:white;border-radius:999px;padding:7px 10px;color:var(--muted);font-weight:900;cursor:pointer}.cat.on{background:var(--soft);color:var(--a);border-color:var(--a)}.swapbox{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:end;margin-top:8px}@media(max-width:640px){.swapbox{grid-template-columns:1fr}}
-.shopItem{display:flex;align-items:flex-start;gap:10px;background:#ffffffb8;border:1px solid var(--border);border-radius:16px;padding:11px;margin:8px 0}.shopItem input{width:22px;height:22px;margin-top:2px;accent-color:var(--a)}.shopItem.done{opacity:.55;text-decoration:line-through}.shopMeta{font-size:.86rem;color:var(--muted);margin-top:3px}.shopGroup{margin:14px 0}.shopGroup h3{margin:8px 0;color:var(--a)}.shopContent{flex:1}.shopDelete{width:auto!important;padding:7px 10px!important;font-size:.8rem!important}
-.recipeForm,.manualAddBox,.sportControls,.installCard{background:var(--soft);border:1px solid var(--border);border-radius:18px;padding:12px;margin:12px 0}.histGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}@media(max-width:760px){.histGrid{grid-template-columns:1fr 1fr}}.warnBox{background:#fff5e5;border:1px solid #ffd08a;border-radius:18px;padding:12px;margin:10px 0;color:#7a4b00}.exerciseBlock h4{margin:6px 0;color:var(--a)}
-@media(max-width:640px){.nav{font-size:.55rem}.nav span{font-size:.92rem}.pill,.macro{font-size:.78rem;padding:6px 8px}.num{font-size:1.45rem}.card{padding:12px}.hero{padding:14px}.bottom{border-radius:18px;padding:5px}}
+:root{--bg:#fff6fb;--card:#fff;--txt:#261b28;--mut:#776279;--a:#d94f8c;--b:#b95edb;--soft:#fff0f7;--bd:#f0d0e2;--bad:#c44}
+body.sobre{--bg:#f4f6f7;--txt:#17202a;--mut:#607080;--a:#2f6f73;--b:#3b4b59;--soft:#eef6f5;--bd:#dce5e7}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--txt);padding-bottom:88px}.app{max-width:1050px;margin:auto;padding:12px}.hero,.card{background:var(--card);border:1px solid var(--bd);border-radius:22px;padding:14px;margin:10px 0;box-shadow:0 10px 25px #0000000c}h1{margin:0;font-size:2.35rem;color:var(--a);letter-spacing:-.05em}h2{color:var(--a);margin:0 0 12px}.tiny{color:var(--mut);font-size:.88rem}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:10px}.s8{grid-column:span 8}.s4{grid-column:span 4}.s6{grid-column:span 6}.s12{grid-column:span 12}@media(max-width:760px){.s8,.s4,.s6{grid-column:span 12}.app{padding:8px}h1{font-size:2rem}}
+input,select,textarea{width:100%;padding:11px;border:1px solid var(--bd);border-radius:14px;font-size:16px;background:#fff}label{font-weight:800;margin:9px 0 5px;display:block}textarea{min-height:80px}.row{display:grid;grid-template-columns:1fr 1fr;gap:8px}.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}@media(max-width:620px){.row,.row3{grid-template-columns:1fr}}
+button{border:0;border-radius:14px;background:linear-gradient(135deg,var(--a),var(--b));color:white;font-weight:900;padding:11px 12px;font-size:1rem;margin:3px;cursor:pointer}button.sec{background:#fff;color:var(--a);border:1px solid var(--bd)}button.bad{background:#fff;color:var(--bad);border:1px solid #f0bcbc}.pill,.macro{display:inline-block;background:var(--soft);border:1px solid var(--bd);border-radius:999px;padding:6px 9px;margin:3px;color:var(--mut);font-weight:800;font-size:.82rem}.macro{border-radius:11px;color:var(--txt)}.page{display:none}.page.on{display:block}.box,.recipe,.day,.food,.ex,.shop,.formbox{background:#ffffffbf;border:1px solid var(--bd);border-radius:18px;padding:12px;margin:9px 0}.title{font-weight:1000;color:var(--a);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}.metric{background:var(--soft);border:1px solid var(--bd);border-radius:16px;padding:10px}.num{font-size:1.55rem;font-weight:1000;color:var(--a)}.bottom{position:fixed;left:50%;transform:translateX(-50%);bottom:8px;width:min(760px,calc(100vw - 12px));background:#fffffff0;border:1px solid var(--bd);border-radius:20px;display:grid;grid-template-columns:repeat(7,1fr);gap:3px;padding:5px;box-shadow:0 12px 30px #0002;z-index:5}.nav{text-align:center;border-radius:15px;padding:6px 2px;color:var(--mut);font-weight:900;font-size:.58rem}.nav.on{background:linear-gradient(135deg,var(--a),var(--b));color:#fff}.nav span{display:block;font-size:.98rem}.tabs,.catbar{display:flex;gap:6px;overflow:auto;margin:8px 0}.tab,.cat{white-space:nowrap;border:1px solid var(--bd);background:#fff;border-radius:999px;padding:8px 10px;color:var(--mut);font-weight:900}.tab.on,.cat.on{background:var(--soft);color:var(--a);border-color:var(--a)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:7px}.check{background:var(--soft);border:1px solid var(--bd);border-radius:14px;padding:9px;font-weight:800}.check input{width:auto}.cup{display:inline-block;width:24px;height:32px;border:2px solid var(--bd);border-radius:6px 6px 10px 10px;margin:3px;background:#fff}.cup.on{background:linear-gradient(#c7edff,#80cfff)}.done{opacity:.55;text-decoration:line-through}a{color:var(--a);font-weight:900;text-decoration:none;border-bottom:1px dashed var(--a);cursor:pointer}details summary{font-weight:1000;color:var(--a);cursor:pointer;margin:8px 0}.warn{background:#fff5e5;border:1px solid #ffd08a;border-radius:14px;padding:10px;color:#704800}
 </style>
 </head>
 <body>
 <div class="app">
-<header class="hero">
-<h1><span class="brand">BloomFit</span> Ultimate V9.3</h1>
-<p class="muted"><b>Repas + sport + sommeil + anti-craquage</b> — app perso, mobile-first, sans produits laitiers, adaptée aux journées 8h-18h.</p>
-<span class="pill">📱 GitHub Ready</span><span class="pill">🥗 Recettes</span><span class="pill">💪 Sport++</span><span class="pill">🎮 Interactif</span>
-<div class="btns"><button class="sec" onclick="page('setup')">⚙️ Objectifs & thème</button><button class="sec" onclick="page('historyPage')">📈 Historique complet</button><button class="sec" onclick="page('install')">📲 Installation</button></div>
-</header>
+<header class="hero"><h1>BloomFit</h1><p class="tiny"><b>V10.15</b> — ton planner personnel BloomFit.</p><button class="sec" onclick="showPage('setup')">⚙️ Objectifs & thème</button><button class="sec" onclick="showPage('history')">📈 Historique</button><button class="sec" onclick="showPage('sos')">🚨 SOS</button></header>
 
-<section id="home" class="secpage on">
-<div class="grid">
-<div class="card s8">
-<h2>🌞 Aujourd’hui</h2>
-<div class="row3"><div class="metric"><div class="num" id="kcalDash">1450</div><div class="tiny">kcal cible</div></div><div class="metric"><div class="num" id="protDash">120g</div><div class="tiny">protéines</div></div><div class="metric"><div class="num" id="stepsDash">10000</div><div class="tiny">pas/jour</div></div></div>
-<div class="box"><div class="title">Routine cours <span class="pill">lundi-vendredi</span></div><ul><li><b>06h30</b> réveil + thé vert + eau.</li><li><b>07h15</b> bus.</li><li><b>10h00</b> collation discrète.</li><li><b>12h30</b> lunch réchauffé = dîner de la veille + dessert.</li><li><b>18h30</b> retour. Sport court avant douche si énergie OK.</li><li><b>20h00</b> dîner + portion du lendemain midi.</li><li><b>22h15</b> routine sommeil.</li></ul></div>
-<h3>Check-in</h3>
-<div class="row3"><div><label>Date</label><input type="date" id="date"></div><div><label>Sommeil</label><input type="number" id="sleep" step=".25" placeholder="7.5"></div><div><label>Humeur/anxiété</label><input type="range" id="mood" min="1" max="10" value="5"><div class="scaleBox"><span>1 = calme</span><span>10 = anxiété forte</span></div><div class="tiny">Valeur : <b id="moodVal">5</b>/10</div></div></div>
-<label>Eau bue</label><div class="water"><button type="button" onclick="waterMinus()">−</button><div><div class="num" id="waterLiters">0.0L</div><div class="tiny"><span id="waterCups">0</span> verre(s) de 250 ml / objectif <span id="waterGoal">2.0L</span></div></div><button type="button" onclick="waterPlus()">+</button></div><div class="cups" id="cups"></div>
-<div class="row"><div><label>Pas estimés</label><input type="number" id="steps" step="100" placeholder="9000"></div><div><label>Tour de taille optionnel</label><input type="number" id="waist" step=".1" placeholder="cm"></div></div>
-<div class="checks"><label class="check"><input type="checkbox" id="clunch">lunch prêt</label><label class="check"><input type="checkbox" id="csnack">collation 10h</label><label class="check"><input type="checkbox" id="csport">sport/marche</label><label class="check"><input type="checkbox" id="ccrack">pas de craquage</label></div>
-<label>Note</label><textarea id="note" placeholder="fatigue, envie de sucre, repas, digestion..."></textarea><div class="btns"><button onclick="saveCheck()">Sauver</button><button class="sec" onclick="fatigue()">Je suis crevée</button></div>
+<section id="home" class="page on"><div class="grid"><div class="card s8"><h2>🌞 Aujourd’hui</h2><div class="row3"><div class="metric"><div class="num" id="kcalDash">1450</div><div class="tiny">kcal</div></div><div class="metric"><div class="num" id="protDash">120g</div><div class="tiny">protéines</div></div><div class="metric"><div class="num" id="stepsDash">10000</div><div class="tiny">pas</div></div></div><div class="box"><b>Routine</b><ul><li>10h : collation discrète.</li><li>Midi : lunch prévu, froid ou réchauffé.</li><li>18h30 : sport avant douche si possible.</li><li>20h : dîner + portion midi suivant.</li></ul></div><div class="row3"><div><label>Date</label><input type="date" id="date"></div><div><label>Sommeil</label><input id="sleep" type="number" step=".25"></div><div><label>Anxiété 1→10</label><input id="mood" type="range" min="1" max="10" value="5"><div class="tiny"><b id="moodVal">5</b>/10</div></div></div><label>Eau</label><button onclick="water(-1)">−</button><span class="num" id="waterTxt">0.0L</span><button onclick="water(1)">+</button><div id="cups"></div><div class="row"><div><label>Pas</label><input id="steps" type="number"></div><div><label>Tour taille</label><input id="waist" type="number" step=".1"></div></div><div class="checks"><label class="check"><input id="c1" type="checkbox"> lunch prêt</label><label class="check"><input id="c2" type="checkbox"> collation</label><label class="check"><input id="c3" type="checkbox"> sport/marche</label><label class="check"><input id="c4" type="checkbox"> pas de craquage</label></div><label>Note</label><textarea id="note"></textarea><button onclick="saveCheck()">Sauver</button><button class="sec" onclick="tiredMode()">Je suis crevée</button><div id="tiredBox" class="box" style="display:none"></div></div><div class="card s4"><h2>🎮 Score</h2><div class="num" id="score">0/8</div><p class="tiny" id="advice"></p></div></div></section>
+
+<section id="setup" class="page"><div class="card"><h2>🎯 Objectifs & thème</h2><div class="row3"><div><label>Poids départ</label><input id="sw" type="number" value="78"></div><div><label>Poids cible</label><input id="tw" type="number" value="68"></div><div><label>Taille</label><input id="heightInput" type="number" value="169"></div></div><div class="row3"><div><label>Âge</label><input id="ageInput" type="number" value="23"></div><div><label>Rythme</label><select id="pace"><option value="safe">Sûrement</option><option value="optimal" selected>Optimal</option><option value="quick">Rapidement</option><option value="date">Date personnalisée</option></select></div><div><label>Date objectif</label><input id="goalDate" type="date" value="2026-06-09"></div></div><div class="row3"><div><label>Mode calories</label><select id="calMode"><option value="prudent">Prudent min 1400</option><option value="rapide">Rapide min 1300</option></select></div><div><label>Activité</label><select id="activity"><option value="low">Faible</option><option value="medium" selected>Moyenne</option><option value="high">Élevée</option></select></div><div><label>Thème</label><select id="theme"><option value="girly">Girly</option><option value="sobre">Sobre</option></select></div></div><button onclick="saveSettings()">Sauvegarder</button><div class="box" id="calcBox"></div></div></section>
+
+<section id="meals" class="page"><div class="card"><h2>🍱 Plan repas</h2>
+<div class="row">
+  <div><label>Semaine du planning</label><select id="mealWeek" onchange="switchMealWeek()">
+    <option value="0">Semaine actuelle</option>
+    <option value="1">Semaine prochaine</option>
+    <option value="2">Dans 2 semaines</option>
+    <option value="3">Dans 3 semaines</option>
+  </select></div>
+  <div><label>Période</label><div class="box tiny" id="mealWeekInfo">—</div></div>
 </div>
-<div class="card s4"><h2>🎮 Score</h2><div class="num" id="score">0/8</div><div class="progress"><div id="bar"></div></div><p id="advice" class="tiny">Remplis ton check-in.</p><div id="fatigueBox" class="box" style="display:none"></div></div>
-<div class="card s12"><h2>📈 Historique rapide</h2><div id="history"></div></div>
+<div class="btns"><button class="sec" onclick="resetCurrentWeekPlan()">Réinitialiser cette semaine avec le menu prévu</button></div><div id="dayTabs" class="tabs"></div><div id="mealBox"></div><div class="btns"><button class="sec" onclick="renderShop();showPage(\'shop\')">🛒 Mettre à jour / voir les courses</button></div></div></section>
+
+<section id="recipes" class="page"><div class="card"><h2>📖 Recettes</h2><details><summary>➕ Ajouter ma recette</summary><div class="formbox"><div class="row"><div><label>Nom</label><input id="newName"></div><div><label>Catégorie</label><select id="newCat"><option>Froid</option><option>One-pot</option><option>Rice-cooker</option><option>Poulet</option><option>Viande</option><option>Végé</option><option>Dessert</option><option>Collation</option></select></div></div><div class="row3"><div><label>kcal</label><input id="newKcal" type="number" value="500"></div><div><label>Prot</label><input id="newProt" type="number" value="30"></div><div><label>Temps</label><input id="newTime" type="number" value="25"></div></div><label>Ingrédients nom,quantité</label><textarea id="newIng" placeholder="poulet,300&#10;riz cru,120"></textarea><label>Étapes</label><textarea id="newSteps" placeholder="Faire revenir l'oignon.&#10;Ajouter le poulet."></textarea><button onclick="addRecipe()">Ajouter</button></div></details><input id="search" placeholder="chercher : froid, one-pot, curry..." oninput="renderRecipes()"><div id="catBar" class="catbar"></div><div id="recipesList"></div></div></section>
+
+<section id="journal" class="page"><div class="grid"><div class="card s8"><h2>✍️ Journal du jour</h2><div class="row"><div><label>Jour</label><select id="journalDay"></select></div><div><label>Repas</label><select id="journalMeal"><option value="0">Midi</option><option value="1">Dîner</option><option value="2">Dessert</option></select></div></div><button onclick="addPlannedMeal()">Ajouter repas du plan</button><div id="logBox"></div></div><div class="card s4"><h2>Totaux</h2><div id="totalsBox"></div></div></div></section>
+
+<section id="sport" class="page"><div class="card"><h2>💪 Sport</h2><div class="row3"><div><label>Mode</label><select id="sportMode" onchange="renderSport()"><option value="express">Express 15</option><option value="standard" selected>Standard 30</option><option value="intense">Intense 45</option></select></div><div><label>Niveau</label><select id="sportLevel" onchange="renderSport()"><option value="1">Débutante</option><option value="2">Intermédiaire</option></select></div><div><label>Focus</label><select id="sportFocus" onchange="renderSport()"><option value="auto">Auto par jour</option><option value="shape">Silhouette</option><option value="legs">Jambes</option><option value="arms">Bras</option><option value="event">Event</option></select></div></div><div id="sportDayTabs" class="tabs"></div><div id="sportBox"></div></div></section>
+
+<section id="shop" class="page"><div class="card"><h2>🛒 Courses réalistes</h2>
+<div class="row">
+  <div><label>Période de courses</label><select id="shopPeriod" onchange="renderShop()">
+    <option value="current">Semaine actuelle</option>
+    <option value="next">Semaine prochaine</option>
+    <option value="sunday">Dimanche → dimanche prochain</option>
+  </select></div>
+  <div><label>Info</label><div class="box tiny" id="shopInfo">Courses calculées selon ton plan repas.</div></div>
 </div>
-</section>
+<div class="btns"><button onclick="renderShop()">🔄 Mettre à jour la liste de courses</button></div>
+<details><summary>➕ Ajouter un élément aux courses</summary>
+  <div class="formbox">
+    <div class="row3">
+      <div><label>Produit</label><input id="manualShopName" placeholder="ex : thé vert"></div>
+      <div><label>Quantité</label><input id="manualShopQty" placeholder="ex : 1 boîte"></div>
+      <div><label>Catégorie</label><select id="manualShopCat"><option>Autres</option><option>Protéines</option><option>Féculents</option><option>Légumes</option><option>Fruits / desserts</option><option>Épicerie</option></select></div>
+    </div>
+    <button class="sec" onclick="addManualShopItem()">Ajouter aux courses</button>
+  </div>
+</details>
+<div id="shopList"></div></div></section>
 
-<section id="setup" class="secpage"><div class="grid"><div class="card s8"><h2>🎯 Objectif</h2><div class="row3"><div><label>Poids départ</label><input id="sw" type="number" value="78" step=".1"></div><div><label>Poids cible</label><input id="tw" type="number" value="68" step=".1"></div><div><label>Taille</label><input id="height" type="number" value="169"></div></div><div class="row3"><div><label>Âge</label><input id="age" type="number" value="23"></div><div><label>Rythme</label><select id="pace"><option value="quick">Rapidement</option><option value="optimal" selected>Optimal</option><option value="safe">Sûrement</option><option value="custom">Personnalisé</option></select></div><div><label>Date personnalisée</label><input id="goaldate" type="date" value="2026-06-09"></div></div>
-<div class="row3"><div><label>Mode calories</label><select id="calMode"><option value="prudent">Prudent min 1400</option><option value="rapide">Rapide min 1300</option><option value="custom">Personnalisé indicatif</option></select></div><div><label>Calories personnalisées</label><input id="customKcal" type="number" value="1400"></div><div><label>Appliquer ?</label><select id="applyCustom"><option value="no">Non</option><option value="yes">Oui</option></select></div></div>
-<div class="row3"><div><label>Activité</label><select id="activity"><option value="low">Faible</option><option value="medium" selected>Moyenne</option><option value="high">Élevée</option></select></div><div><label>Thème</label><select id="theme"><option value="girly">Girly Bloom</option><option value="sobre">Sobre Focus</option></select></div><div><label>Semaine menus</label><select id="week"><option>1</option><option>2</option><option>3</option><option>4</option></select></div></div><div class="btns"><button onclick="saveSettings()">Sauvegarder</button></div></div><div class="card s4"><h2>📊 Calcul</h2><div class="metric"><div class="num" id="calcKcal">1450</div><div class="tiny">kcal/jour</div></div><div class="metric" style="margin-top:10px"><div class="num" id="calcWeeks">—</div><div class="tiny">temps estimé</div></div><p id="calcTxt" class="tiny"></p></div></div></section>
+<section id="sos" class="page"><div class="grid"><div class="card s6"><h2>🚨 SOS anti-craquage</h2><label>Pourquoi tu risques de craquer ?</label><select id="sosReason"><option value="sucre">Envie de sucre</option><option value="fatigue">Fatigue</option><option value="stress">Stress/anxiété</option><option value="faim">Vraie faim</option><option value="ennui">Ennui</option></select><button onclick="renderSOS()">Aide-moi</button><div id="sosResult" class="box"></div></div><div class="card s6"><h2>⚡ Repas secours</h2><div class="box"><b>Chaud :</b> œufs + pommes de terre / riz + crudités.</div><div class="box"><b>Froid :</b> wrap poulet, bowl thon riz concombre, yaourt soja + compote.</div><div class="box"><b>Reset :</b> Je reprends au prochain choix, pas demain.</div></div></div></section>
 
-<section id="meals" class="secpage"><div class="card"><h2>🍱 Plan repas</h2><p class="tiny">Tu peux changer le midi, le dîner et le dessert. Les courses se recalculent.</p><div class="btns"><button onclick="nextWeek()">Changer de semaine</button><button class="sec" onclick="resetPlan()">Réinitialiser semaine</button></div><div id="mealPlan"></div></div></section>
-
-<section id="recipes" class="secpage"><div class="card"><h2>📖 Recettes</h2>
-<div class="recipeForm"><div class="title">➕ Ajouter ma recette</div><div class="row"><div><label>Nom</label><input id="newRecipeName" placeholder="ex : poulet tomate"></div><div><label>Catégorie</label><select id="newRecipeCat"><option>Plats poulet</option><option>Plats viande</option><option>Végé</option><option>Desserts</option><option>Collations</option><option>Rapide</option></select></div></div><div class="row3"><div><label>Portions</label><input id="newRecipePortions" type="number" value="2"></div><div><label>Temps min</label><input id="newRecipeTime" type="number" value="25"></div><div><label>Prix €</label><input id="newRecipePrice" type="number" value="4"></div></div><div class="row3"><div><label>kcal</label><input id="newKcal" type="number" value="500"></div><div><label>Protéines</label><input id="newProt" type="number" value="30"></div><div><label>Glucides</label><input id="newCarb" type="number" value="50"></div></div><div class="row3"><div><label>Lipides</label><input id="newFat" type="number" value="15"></div><div><label>Fibres</label><input id="newFiber" type="number" value="6"></div><div><label>Sucres</label><input id="newSugar" type="number" value="8"></div></div><label>Ingrédients : nom,quantité</label><textarea id="newIngredients" placeholder="blanc de poulet,300&#10;riz cru,120"></textarea><label>Étapes</label><textarea id="newSteps" placeholder="Cuis le riz.&#10;Prépare la sauce."></textarea><button class="sec" onclick="addCustomRecipe()">Ajouter</button></div>
-<input id="search" placeholder="chercher : poulet, dessert, rapide..." oninput="renderRecipes()"><div class="categoryBar" id="catBar"></div><div id="recipeList"></div></div></section>
-
-<section id="shopping" class="secpage"><div class="card"><h2>🛒 Courses</h2><div class="manualAddBox"><div class="title">Ajouter un élément</div><div class="row3"><div><label>Produit</label><input id="manualShopName" placeholder="thé vert"></div><div><label>Quantité</label><input id="manualShopQty" placeholder="1 paquet"></div><div><label>Catégorie</label><select id="manualShopCat"><option>Protéines</option><option>Féculents / placard</option><option>Légumes</option><option>Fruits / desserts</option><option>Épicerie / frais</option><option>Autres</option></select></div></div><button class="sec" onclick="addManualShopItem()">Ajouter</button></div><div id="shop"></div></div></section>
-
-<section id="journal" class="secpage"><div class="grid"><div class="card s7"><h2>✍️ Journal alimentaire</h2><div class="box"><div class="title">Ajouter depuis le plan</div><div class="row"><div><label>Jour</label><select id="planDay"></select></div><div><label>Repas</label><select id="planMeal"><option value="lunch">Midi</option><option value="dinner">Dîner</option><option value="dessert">Dessert</option></select></div></div><button class="sec" onclick="addPlanMeal()">Ajouter ce repas</button></div><div class="row"><div><label>Aliment</label><input id="food" placeholder="riz cuit, poulet, banane..."></div><div><label>g/ml</label><input id="qty" type="number" value="100"></div></div><div class="btns"><button onclick="addFood()">Ajouter</button><button class="sec" onclick="clearLog()">Vider</button></div><div id="foodMsg"></div><div id="log"></div></div><div class="card s5"><h2>🧮 Totaux</h2><div id="totals"></div></div></div></section>
-
-<section id="sport" class="secpage"><div class="card"><h2>💪 Sport V9++</h2><div class="sportControls"><div class="title">⚙️ Personnaliser la séance</div><div class="row3"><div><label>Mode séance</label><select id="sportMode" onchange="renderSport()"><option value="express">Express 15 min</option><option value="standard" selected>Standard 30 min</option><option value="intense">Intense 45 min</option></select></div><div><label>Niveau</label><select id="sportLevel" onchange="renderSport()"><option value="1">Débutante</option><option value="2">Intermédiaire</option></select></div><div><label>Focus</label><select id="sportFocus" onchange="renderSport()"><option value="shape">Silhouette globale</option><option value="event">Avant événement</option><option value="legs">Jambes</option><option value="arms">Bras</option></select></div></div></div><div id="sportPlan"></div></div></section>
-
-<section id="sos" class="secpage"><div class="grid"><div class="card s6"><h2>🚨 Anti-craquage</h2><label>Pourquoi tu risques de craquer ?</label><select id="reason"><option value="sucre">Envie de sucre</option><option value="stress">Stress/anxiété</option><option value="fatigue">Fatigue</option><option value="faim">Vraie faim</option><option value="ennui">Ennui</option></select><button onclick="sos()">Aide-moi</button><div id="sosResult" class="box"></div></div><div class="card s6"><h2>🍫 Desserts/collations</h2><div id="desserts"></div></div></div></section>
-
-<section id="historyPage" class="secpage"><div class="card"><h2>📈 Historique complet</h2><div id="historyStats" class="histGrid"></div><h3>Check-ins</h3><div id="fullHistory"></div><h3>Journal alimentaire actuel</h3><div id="foodHistory"></div></div></section>
-
-<section id="install" class="secpage"><div class="card"><h2>📲 Installation GitHub Pages</h2><ol><li>Crée un repo GitHub nommé <b>bloomfit</b>.</li><li>Upload ce fichier sous le nom <b>index.html</b>.</li><li>Settings → Pages → Deploy from branch → main / root.</li><li>Ouvre le lien sur Safari → Partager → Sur l’écran d’accueil.</li></ol></div></section>
-
-</div>
-<nav class="bottom" id="bottom"></nav>
+<section id="history" class="page"><div class="card"><h2>📈 Historique</h2><div id="historyBox"></div></div></section>
+</div><nav id="nav" class="bottom"></nav>
 
 <script>
-const pages=[["home","🌞","Jour"],["meals","🍱","Repas"],["recipes","📖","Recettes"],["journal","✍️","Journal"],["sport","💪","Sport"],["shopping","🛒","Courses"],["sos","🚨","SOS"]];
-const cats=["Toutes","Plats poulet","Plats viande","Végé","Desserts","Collations","Rapide"];let activeCat="Toutes",waterC=0;
+const navPages=[["home","🌞","Jour"],["meals","🍱","Repas"],["recipes","📖","Recettes"],["journal","✍️","Journal"],["sport","💪","Sport"],["shop","🛒","Courses"],["sos","🚨","SOS"]];
+const categoryList=["Toutes","Froid","One-pot","Rice-cooker","Poulet","Viande","Végé","Dessert","Collation","Rapide"];
+let activeCategory="Toutes", activeDay="", activeSportDay="", waterCups=0;
+
 const baseRecipes=[
-{id:"chickenRice",cat:["Plats poulet","Rapide"],n:"Bol poulet riz paprika",p:2,t:30,price:6.2,mac:{k:520,p:43,c:52,f:15,fi:7,su:7,add:0,sat:2,mono:8,poly:2,chol:95,na:650,sel:1.6,eau:430,alc:0},ing:[["blanc de poulet",300],["riz cru",120],["courgette",250],["poivron",150],["huile d'olive",15],["sauce soja",20],["compote",200]],steps:["Riz au cuiseur.","Poêle : poulet, paprika, légumes.","Sépare en 2 portions + compote."]},
-{id:"beefPotato",cat:["Plats viande"],n:"Bowl bœuf 5% pommes de terre",p:2,t:35,price:7.4,mac:{k:570,p:38,c:55,f:20,fi:9,su:8,add:0,sat:5,mono:10,poly:2,chol:90,na:520,sel:1.3,eau:520,alc:0},ing:[["boeuf 5%",300],["pommes de terre",500],["haricots verts",400],["coulis tomate",150],["huile d'olive",10],["pomme",2]],steps:["Pommes de terre au four.","Bœuf + tomate à la poêle.","Ajoute légumes, sépare en 2 + pomme."]},
-{id:"chickenCurry",cat:["Plats poulet"],n:"Curry poulet sans coco",p:2,t:35,price:6.8,mac:{k:540,p:44,c:58,f:14,fi:8,su:12,add:0,sat:2,mono:8,poly:2,chol:95,na:620,sel:1.6,eau:500,alc:0},ing:[["blanc de poulet",300],["riz cru",120],["tomates concassées",250],["carotte",200],["épinards",150],["huile d'olive",15],["pomme",2]],steps:["Riz au cuiseur.","Poêle : poulet, curry doux, carotte, tomates.","Ajoute épinards, sépare en 2 + pomme."]},
-{id:"turkeyPasta",cat:["Plats viande","Rapide"],n:"Pâtes normales dinde tomate",p:2,t:25,price:5.6,mac:{k:560,p:39,c:70,f:13,fi:7,su:11,add:0,sat:2,mono:7,poly:2,chol:65,na:620,sel:1.6,eau:430,alc:0},ing:[["pâtes normales",150],["dinde",280],["coulis tomate",250],["courgette",250],["huile d'olive",10],["compote",200]],steps:["Cuis les pâtes normales.","Poêle : dinde, courgette, tomate.","Sépare en 2 + compote."]},
-{id:"coralDahl",cat:["Végé"],n:"Dahl lentilles corail tomate",p:2,t:35,price:4.8,mac:{k:510,p:25,c:76,f:11,fi:16,su:10,add:0,sat:2,mono:6,poly:2,chol:0,na:580,sel:1.5,eau:560,alc:0},ing:[["lentilles corail",160],["riz cru",80],["tomates concassées",300],["carotte",200],["épinards",150],["huile d'olive",10],["yaourt soja",150]],steps:["Lentilles + tomates + carotte + curry doux.","Riz au cuiseur.","Ajoute épinards + dessert soja."]},
-{id:"tofuNoodles",cat:["Végé","Rapide"],n:"Tofu nouilles légumes",p:2,t:30,price:5.8,mac:{k:520,p:30,c:58,f:18,fi:9,su:9,add:1,sat:3,mono:7,poly:6,chol:0,na:780,sel:2,eau:520,alc:0},ing:[["tofu",400],["nouilles",130],["légumes surgelés",400],["sauce soja",25],["huile d'olive",10],["banane",2]],steps:["Dore le tofu.","Ajoute légumes, nouilles cuites, sauce soja.","Sépare en 2 + banane."]},
-{id:"chiliTurkey",cat:["Plats viande"],n:"Chili dinde haricots rouges",p:2,t:35,price:6.2,mac:{k:540,p:42,c:62,f:13,fi:15,su:11,add:0,sat:2,mono:7,poly:2,chol:70,na:760,sel:1.9,eau:540,alc:0},ing:[["dinde",280],["haricots rouges",300],["riz cru",80],["tomates concassées",300],["maïs",100],["huile d'olive",8],["yaourt soja",150]],steps:["Riz au cuiseur.","Dinde + tomates + haricots + maïs.","Sépare en 2 + yaourt soja."]},
-{id:"chickpeaChicken",cat:["Plats poulet","Rapide"],n:"Salade tiède poulet pois chiches",p:2,t:20,price:6,mac:{k:535,p:42,c:48,f:18,fi:12,su:9,add:0,sat:3,mono:10,poly:3,chol:90,na:620,sel:1.6,eau:500,alc:0},ing:[["blanc de poulet",260],["pois chiches",240],["concombre",200],["tomate",250],["salade",120],["huile d'olive",15],["pomme",2]],steps:["Cuis le poulet.","Mélange crudités + pois chiches + poulet.","Sépare en 2 + pomme."]},
-{id:"eggShak",cat:["Végé","Rapide"],n:"Shakshuka express + pain",p:1,t:25,price:2.9,mac:{k:500,p:27,c:45,f:23,fi:9,su:13,add:0,sat:5,mono:12,poly:3,chol:370,na:700,sel:1.8,eau:430,alc:0},ing:[["oeufs",2],["tomates concassées",250],["poivron",150],["pain",70],["huile d'olive",8],["compote",100]],steps:["Tomates + poivron à la poêle.","Casse 2 œufs dedans.","Pain + compote."]},
-{id:"turkeyWrap",cat:["Plats viande","Rapide"],n:"Wrap dinde avocat + compote",p:1,t:10,price:4.3,mac:{k:480,p:35,c:48,f:17,fi:8,su:16,add:2,sat:3,mono:9,poly:2,chol:55,na:900,sel:2.3,eau:310,alc:0},ing:[["wrap",1],["dinde",130],["avocat",50],["concombre",100],["tomate",100],["moutarde",10],["compote",100]],steps:["Wrap + moutarde.","Ajoute dinde, avocat, crudités.","Roule serré + compote."]},
-{id:"chickenPotatoMustard",cat:["Plats poulet","Rapide"],n:"Poulet moutarde douce pommes de terre",p:2,t:35,price:6.1,mac:{k:525,p:42,c:54,f:15,fi:7,su:8,add:1,sat:2,mono:8,poly:2,chol:95,na:650,sel:1.6,eau:480,alc:0},ing:[["blanc de poulet",300],["pommes de terre",450],["courgette",250],["moutarde",20],["huile d'olive",12],["compote",200]],steps:["Pommes de terre au four.","Poulet à la poêle avec moutarde douce.","Ajoute courgette, sépare en 2 portions."]},
-{id:"bananaOat",cat:["Desserts","Collations"],n:"Bowl banane avoine soja",p:1,t:5,price:1.2,mac:{k:260,p:8,c:48,f:5,fi:6,su:18,add:0,sat:1,mono:2,poly:2,chol:0,na:60,sel:.15,eau:180,alc:0},ing:[["avoine",40],["banane",1],["boisson soja",120]],steps:["Mélange avoine + soja.","Ajoute banane + cannelle."]},
-{id:"appleCrumble",cat:["Desserts"],n:"Pomme façon crumble express",p:1,t:12,price:1.1,mac:{k:220,p:4,c:40,f:6,fi:7,su:22,add:0,sat:1,mono:3,poly:1,chol:0,na:30,sel:.08,eau:170,alc:0},ing:[["pomme",1],["avoine",25],["huile d'olive",3]],steps:["Pomme en morceaux à la poêle.","Ajoute avoine grillée + cannelle."]},
-{id:"soyCompote",cat:["Desserts","Collations","Rapide"],n:"Yaourt soja + compote + céréales",p:1,t:3,price:1.5,mac:{k:210,p:8,c:36,f:4,fi:4,su:20,add:4,sat:.7,mono:1,poly:2,chol:0,na:80,sel:.2,eau:220,alc:0},ing:[["yaourt soja",150],["compote",100],["céréales",20]],steps:["Mets tout dans un bol."]},
-{id:"barFruit",cat:["Collations","Rapide"],n:"Barre céréales + fruit",p:1,t:0,price:1.4,mac:{k:230,p:4,c:44,f:5,fi:4,su:22,add:8,sat:1.2,mono:2,poly:1,chol:0,na:120,sel:.3,eau:120,alc:0},ing:[["barre céréales",1],["pomme",1]],steps:["À glisser dans le sac. Choisis sans lait si possible."]},
-{id:"bananaChocoOat",cat:["Desserts","Collations"],n:"Mug bowl banane chocolat avoine",p:1,t:8,price:1.3,mac:{k:285,p:8,c:50,f:7,fi:7,su:19,add:4,sat:2,mono:3,poly:1,chol:0,na:80,sel:.2,eau:160,alc:0},ing:[["banane",1],["avoine",35],["chocolat noir",10],["boisson soja",80]],steps:["Écrase banane.","Mélange avoine + soja.","Ajoute chocolat, chauffe quelques minutes."]}
+{id:"ricePouletTomate",cat:["Rice-cooker","Poulet"],n:"Rice-cooker poulet tomate paprika",t:35,mac:{k:535,p:42,c:60,f:12},ing:[["blanc de poulet",300],["riz cru",120],["tomates concassées",250],["courgette",200],["oignon",80],["ail",1],["paprika",5],["huile olive",10],["compote",200]],steps:["Rincer le riz pour éviter qu’il colle trop.","Mettre riz, tomates concassées, 220 ml d’eau, ail, oignon émincé et paprika dans le rice-cooker.","Ajouter le poulet coupé petit et la courgette en dés.","Lancer la cuisson. Mélanger à mi-cuisson si possible.","Laisser reposer 5 min puis séparer en 2 portions."]},
+{id:"curryRC",cat:["Rice-cooker","Poulet"],n:"Rice-cooker curry poulet sans coco",t:35,mac:{k:540,p:44,c:58,f:14},ing:[["blanc de poulet",300],["riz cru",120],["tomates concassées",250],["carotte",200],["oignon",80],["ail",1],["curry doux",6],["huile olive",10],["pomme",2]],steps:["Rincer le riz.","Mettre riz, tomates, 220 ml d’eau, curry, ail et oignon dans le rice-cooker.","Ajouter carotte râpée et poulet en petits morceaux.","Lancer la cuisson. Si la sauce est trop épaisse, ajouter un petit trait d’eau à la fin.","Séparer en 2 portions + pomme."]},
+{id:"onePotPates",cat:["One-pot","Poulet"],n:"One-pot pâtes poulet tomate",t:25,mac:{k:560,p:42,c:70,f:13},ing:[["pâtes normales",150],["blanc de poulet",280],["coulis tomate",250],["courgette",250],["oignon",80],["ail",1],["huile olive",10],["compote",200]],steps:["Dans une grande poêle, faire revenir ail et oignon 2 min.","Ajouter le poulet en dés et faire dorer 5 min.","Ajouter les pâtes, le coulis tomate, la courgette en dés et 350 ml d’eau.","Couvrir 12 à 15 min en remuant régulièrement.","Séparer en 2 portions + compote."]},
+{id:"coldBowl",cat:["Froid","Poulet","Rapide"],n:"Bowl froid poulet riz crudités",t:20,mac:{k:510,p:40,c:55,f:14},ing:[["blanc de poulet",280],["riz cru",100],["concombre",200],["tomate",250],["salade",120],["huile olive",12],["moutarde",15],["pomme",2]],steps:["Cuire le riz et le laisser tiédir.","Couper le poulet petit et le cuire avec ail/paprika pendant 8 min.","Mélanger riz, crudités, poulet, moutarde et huile d’olive.","Se mange froid ou tiède, pratique pour l’école."]},
+{id:"boeufPatate",cat:["One-pot","Viande"],n:"Bowl bœuf 5% pommes de terre",t:35,mac:{k:570,p:38,c:55,f:20},ing:[["boeuf 5%",300],["pommes de terre",500],["haricots verts",400],["coulis tomate",150],["oignon",80],["ail",1],["huile olive",10],["pomme",2]],steps:["Couper les pommes de terre en petits dés.","Faire revenir ail/oignon avec l’huile 2 min.","Ajouter le bœuf et faire dorer.","Ajouter pommes de terre, coulis tomate et un fond d’eau. Couvrir 20 min.","Ajouter haricots verts et cuire encore 5 min."]},
+{id:"wrapPouletAvocat",cat:["Froid","Viande","Rapide"],n:"Wrap poulet avocat",t:10,mac:{k:480,p:35,c:48,f:17},ing:[["wrap",1],["blanc de poulet",140],["avocat",50],["concombre",100],["tomate",100],["moutarde",10],["compote",100]],steps:["Étaler la moutarde.","Ajouter poulet cuit, avocat, concombre et tomate.","Rouler serré. Poêler 2 min si tu veux croustillant."]},
+{id:"wrapPouletPaprika",cat:["Froid","Poulet","Rapide"],n:"Wrap poulet paprika crudités",t:15,mac:{k:490,p:38,c:48,f:16},ing:[["wrap",1],["blanc de poulet",140],["concombre",100],["salade",60],["tomate",80],["paprika",3],["moutarde",10],["compote",100]],steps:["Couper le poulet petit et le cuire 8 min avec paprika, ail, poivre.","Étaler moutarde dans le wrap.","Ajouter crudités et poulet.","Rouler serré."]},
+{id:"saladeOeufPdt",cat:["Froid","Végé"],n:"Salade froide œufs pommes de terre",t:25,mac:{k:500,p:26,c:50,f:22},ing:[["oeufs",2],["pommes de terre",300],["concombre",150],["tomate",150],["moutarde",15],["huile olive",8],["compote",100]],steps:["Cuire les pommes de terre en dés et les œufs.","Refroidir sous l’eau froide.","Mélanger avec crudités, moutarde et huile.","Très bon froid pour midi."]},
+{id:"dahlRC",cat:["Rice-cooker","Végé"],n:"Dahl lentilles corail rice-cooker",t:35,mac:{k:510,p:25,c:76,f:11},ing:[["lentilles corail",160],["riz cru",80],["tomates concassées",300],["carotte",200],["oignon",80],["ail",1],["curry doux",6],["yaourt soja",150]],steps:["Rincer les lentilles corail et le riz.","Mettre tout dans le rice-cooker avec 450 ml d’eau.","Ajouter curry, ail, oignon, carotte râpée et tomates.","Cuire puis mélanger. Ajouter yaourt soja au moment de servir."]},
+{id:"onePotMex",cat:["One-pot","Poulet"],n:"One-pot riz mexicain poulet",t:30,mac:{k:550,p:42,c:62,f:14},ing:[["blanc de poulet",300],["riz cru",120],["tomates concassées",250],["maïs",120],["haricots rouges",200],["oignon",80],["paprika",5],["huile olive",10]],steps:["Faire revenir oignon + poulet 5 min.","Ajouter riz, tomates, maïs, haricots, paprika et 250 ml d’eau.","Couvrir et cuire 18 min en remuant.","Laisser reposer 5 min."]},
+{id:"thonRizFroid",cat:["Froid","Rapide"],n:"Bowl froid thon riz concombre",t:10,mac:{k:460,p:34,c:55,f:11},ing:[["thon",140],["riz cuit",180],["concombre",150],["tomate",150],["huile olive",8],["moutarde",10],["compote",100]],steps:["Égoutter le thon.","Mélanger riz déjà cuit, thon et crudités.","Ajouter moutarde, huile, poivre et citron si tu as.","Servir froid."]},
+{id:"burgerBowl",cat:["One-pot","Viande"],n:"Burger bowl léger bœuf pommes de terre",t:30,mac:{k:555,p:38,c:52,f:19},ing:[["boeuf 5%",300],["pommes de terre",450],["salade",120],["tomate",200],["cornichons",60],["moutarde",15],["huile olive",8]],steps:["Cuire les pommes de terre en cubes à la poêle ou au four.","Faire dorer le bœuf avec paprika, ail et poivre.","Mettre salade, tomate, cornichons dans le bowl.","Ajouter pommes de terre + bœuf + moutarde."]},
+{id:"onePotPouletMielSoja",cat:["One-pot","Poulet"],n:"One-pot poulet miel-soja riz",t:30,mac:{k:545,p:42,c:62,f:13},ing:[["blanc de poulet",300],["riz cru",120],["carotte",200],["courgette",200],["sauce soja",20],["miel",10],["ail",1],["huile olive",8]],steps:["Faire revenir ail + poulet en dés 5 min.","Ajouter riz, légumes, sauce soja, miel et 250 ml d’eau.","Couvrir 18 min en remuant.","Laisser reposer 5 min."]},
+{id:"saladePatesPoulet",cat:["Froid","Poulet"],n:"Salade froide pâtes poulet tomate",t:25,mac:{k:530,p:40,c:62,f:13},ing:[["pâtes normales",140],["blanc de poulet",280],["tomate",250],["concombre",200],["moutarde",15],["huile olive",10],["compote",200]],steps:["Cuire les pâtes et les refroidir.","Cuire le poulet avec ail, paprika, poivre.","Mélanger pâtes, poulet, crudités, moutarde et huile.","Séparer en 2 portions."]},
+{id:"wrapOeufAvocat",cat:["Froid","Végé","Rapide"],n:"Wrap œuf avocat crudités",t:12,mac:{k:470,p:24,c:42,f:23},ing:[["wrap",1],["oeufs",2],["avocat",50],["concombre",100],["tomate",100],["moutarde",10],["compote",100]],steps:["Cuire les œufs brouillés ou durs.","Étaler moutarde dans le wrap.","Ajouter avocat, crudités et œufs.","Rouler serré."]},
+{id:"onePotRizOeufsTomate",cat:["One-pot","Végé","Rapide"],n:"Riz sauté tomate œufs",t:20,mac:{k:505,p:24,c:62,f:18},ing:[["riz cru",80],["oeufs",2],["tomate",250],["courgette",150],["oignon",60],["ail",1],["huile olive",8]],steps:["Cuire le riz ou utiliser un reste.","Faire revenir ail/oignon + tomate + courgette.","Ajouter le riz puis les œufs battus.","Mélanger jusqu’à cuisson des œufs."]},
+{id:"pommeCrumble",cat:["Dessert","Rapide"],n:"Pomme façon crumble express",t:12,mac:{k:220,p:4,c:40,f:6},ing:[["pomme",1],["avoine",25],["huile olive",3],["cannelle",2]],steps:["Couper la pomme en dés et cuire 5 min avec un fond d’eau + cannelle.","Dans la même poêle, griller avoine + huile 2 à 4 min.","Verser l’avoine dorée sur la pomme."]},
+{id:"mugBanane",cat:["Dessert","Collation"],n:"Mini bowl banane cacao avoine",t:8,mac:{k:285,p:8,c:50,f:7},ing:[["banane",1],["avoine",35],["cacao",6],["boisson soja",80]],steps:["Écraser la banane.","Ajouter avoine et boisson soja.","Ajouter chocolat en morceaux.","Cuire à la poêle 5 min à feu doux en remuant, ou au four 8-10 min dans un petit ramequin."]},
+{id:"sojaCompote",cat:["Dessert","Collation","Rapide"],n:"Yaourt soja compote céréales",t:3,mac:{k:210,p:8,c:36,f:4},ing:[["yaourt soja",150],["compote",100],["céréales",20]],steps:["Mettre tout dans un bol."]},
+{id:"barreFruit",cat:["Collation","Rapide"],n:"Barre céréales + fruit",t:0,mac:{k:230,p:4,c:44,f:5},ing:[["barre céréales",1],["pomme",1]],steps:["À glisser dans le sac."]}
+,
+{id:"boeufRizTomate",cat:["One-pot","Viande"],n:"One-pot bœuf riz tomate",t:30,mac:{k:545,p:36,c:62,f:16},ing:[["boeuf 5%",300],["riz cru",120],["tomates concassées",300],["courgette",200],["oignon",80],["ail",1],["paprika",5]],steps:["Faire revenir ail et oignon 2 min.","Ajouter le bœuf 5% et faire dorer.","Ajouter riz, tomates concassées, courgette et 250 ml d’eau.","Couvrir 18 min en remuant de temps en temps.","Laisser reposer 5 min avant de séparer en 2 portions."]},
+{id:"boeufMexicain",cat:["One-pot","Viande"],n:"Bowl bœuf mexicain riz haricots",t:30,mac:{k:575,p:38,c:68,f:17},ing:[["boeuf 5%",300],["riz cru",100],["haricots rouges",250],["maïs",120],["tomates concassées",250],["oignon",80],["paprika",6],["ail",1]],steps:["Faire revenir oignon, ail et bœuf.","Ajouter paprika, riz, tomates, haricots rouges et maïs.","Ajouter 220 ml d’eau, couvrir et cuire 18 min.","Mélanger et laisser reposer 5 min."]},
+{id:"boeufCarottesSemoule",cat:["One-pot","Viande","Rapide"],n:"Bœuf carottes semoule express",t:20,mac:{k:520,p:35,c:58,f:16},ing:[["boeuf 5%",300],["semoule",120],["carotte",250],["oignon",80],["ail",1],["coulis tomate",180],["huile olive",8]],steps:["Faire revenir ail, oignon et bœuf.","Ajouter carottes râpées et coulis tomate.","Laisser mijoter 8-10 min.","Préparer la semoule avec eau chaude et servir avec le bœuf."]},
+{id:"boeufNouillesSoja",cat:["One-pot","Viande","Rapide"],n:"Bœuf nouilles sauce soja légumes",t:25,mac:{k:560,p:37,c:65,f:17},ing:[["boeuf 5%",300],["nouilles",130],["légumes surgelés",350],["sauce soja",25],["ail",1],["huile olive",8]],steps:["Cuire les nouilles rapidement.","Faire revenir ail + bœuf.","Ajouter légumes surgelés et cuire 7-8 min.","Ajouter nouilles et sauce soja, mélanger 2 min."]},
+{id:"boeufFroidPdt",cat:["Froid","Viande"],n:"Salade froide bœuf pommes de terre",t:30,mac:{k:540,p:36,c:50,f:19},ing:[["boeuf 5%",280],["pommes de terre",450],["concombre",200],["tomate",200],["salade",100],["moutarde",15],["huile olive",10]],steps:["Cuire les pommes de terre en dés puis laisser tiédir.","Faire cuire le bœuf avec ail, paprika et poivre.","Mélanger pommes de terre, crudités, bœuf, moutarde et huile.","Très bon froid ou tiède pour le midi."]},
+{id:"boeufCourgettePates",cat:["One-pot","Viande"],n:"One-pot pâtes bœuf courgette tomate",t:25,mac:{k:570,p:37,c:72,f:16},ing:[["boeuf 5%",300],["pâtes normales",150],["courgette",250],["coulis tomate",250],["oignon",80],["ail",1]],steps:["Faire revenir ail, oignon et bœuf.","Ajouter pâtes, courgette, coulis tomate et 350 ml d’eau.","Couvrir 12-15 min en remuant.","Laisser reposer 2 min."]},
+{id:"boeufPatatePoivron",cat:["One-pot","Viande"],n:"Poêlée bœuf pommes de terre poivron",t:35,mac:{k:560,p:36,c:55,f:20},ing:[["boeuf 5%",300],["pommes de terre",500],["poivron",200],["oignon",80],["ail",1],["paprika",5],["huile olive",10]],steps:["Couper les pommes de terre en petits dés.","Faire revenir ail, oignon et bœuf.","Ajouter pommes de terre, poivron, paprika et un fond d’eau.","Couvrir 20-25 min jusqu’à cuisson."]},
+{id:"pouletCitronRiz",cat:["One-pot","Poulet"],n:"Poulet citron riz courgette",t:30,mac:{k:525,p:42,c:58,f:12},ing:[["blanc de poulet",300],["riz cru",120],["courgette",250],["oignon",80],["ail",1],["citron",1],["huile olive",8]],steps:["Faire revenir ail, oignon et poulet en petits morceaux.","Ajouter riz, courgette, jus de citron et 240 ml d’eau.","Couvrir 18 min.","Laisser reposer 5 min."]},
+{id:"pouletFajitaBowl",cat:["One-pot","Poulet"],n:"Bowl poulet fajita riz maïs",t:30,mac:{k:545,p:43,c:62,f:13},ing:[["blanc de poulet",300],["riz cru",110],["poivron",250],["oignon",100],["maïs",120],["paprika",6],["tomates concassées",200]],steps:["Faire revenir poulet, oignon, poivron et paprika.","Ajouter riz, tomates, maïs et 220 ml d’eau.","Couvrir 18 min.","Mélanger et séparer en 2 portions."]},
+{id:"pouletPatesFroides",cat:["Froid","Poulet"],n:"Salade froide pâtes poulet moutarde",t:25,mac:{k:520,p:40,c:62,f:12},ing:[["blanc de poulet",280],["pâtes normales",140],["concombre",200],["tomate",200],["moutarde",15],["huile olive",8],["compote",200]],steps:["Cuire les pâtes puis les refroidir.","Cuire le poulet avec ail et paprika.","Mélanger pâtes, crudités, poulet, moutarde et huile.","Séparer en 2 portions + compote."]},
+{id:"pouletOeufWrap",cat:["Froid","Poulet","Rapide"],n:"Wrap poulet œuf crudités",t:15,mac:{k:500,p:42,c:42,f:18},ing:[["wrap",1],["blanc de poulet",120],["oeufs",1],["salade",60],["tomate",100],["moutarde",10],["compote",100]],steps:["Cuire le poulet en petits morceaux.","Cuire l’œuf brouillé ou dur.","Mettre moutarde, salade, tomate, poulet et œuf dans le wrap.","Rouler serré."]},
+{id:"rcPouletPetitsPois",cat:["Rice-cooker","Poulet"],n:"Rice-cooker poulet haricots verts carotte",t:35,mac:{k:530,p:42,c:60,f:12},ing:[["blanc de poulet",300],["riz cru",120],["carotte",200],["haricots verts",150],["oignon",80],["ail",1],["huile olive",8]],steps:["Rincer le riz.","Mettre riz, 240 ml d’eau, carotte, haricots verts, ail et oignon.","Ajouter le poulet en petits dés.","Lancer la cuisson puis mélanger."]},
+{id:"miniCookiesAvoine",cat:["Dessert","Collation"],n:"Mini cookies avoine banane sans micro-ondes",t:18,mac:{k:240,p:6,c:42,f:6},ing:[["banane",1],["avoine",35],["céréales",10],["cannelle",2],["huile olive",3]],steps:["Écraser la banane dans un bol.","Ajouter avoine, cannelle, céréales et huile.","Former 4 petits cookies sur papier cuisson.","Cuire au four 12 à 15 min à 180°C."]},
+{id:"miniPancakesSoja",cat:["Dessert","Collation"],n:"Mini pancakes soja vanille",t:15,mac:{k:260,p:9,c:45,f:6},ing:[["farine",45],["boisson soja",90],["compote",50],["vanille",2],["levure",3],["huile olive",3]],steps:["Mélanger farine, levure, vanille, compote et boisson soja.","Faire des petits tas dans une poêle antiadhésive.","Cuire 2 min par face à feu moyen.","Servir nature ou avec un peu de compote froide."]},
+{id:"miniMuffinsCompote",cat:["Dessert","Collation"],n:"Mini muffins compote cannelle",t:25,mac:{k:230,p:5,c:42,f:5},ing:[["farine",45],["compote",100],["boisson soja",40],["levure",3],["cannelle",2],["huile olive",4]],steps:["Mélanger farine, levure et cannelle.","Ajouter compote, boisson soja et huile.","Verser dans petits moules.","Cuire 18 à 20 min au four à 180°C."]},
+{id:"miniCrepesSoja",cat:["Dessert","Collation"],n:"Mini crêpes soja express",t:15,mac:{k:250,p:8,c:45,f:5},ing:[["farine",50],["boisson soja",110],["compote",50],["vanille",2],["huile olive",3]],steps:["Mélanger farine, boisson soja, vanille et compote.","Cuire de petites crêpes à la poêle légèrement huilée.","Garnir avec compote froide ou yaourt soja."]},
+{id:"biscuitBowlSoja",cat:["Dessert","Collation","Rapide"],n:"Bowl yaourt soja biscuit compote",t:3,mac:{k:230,p:8,c:40,f:5},ing:[["yaourt soja",150],["compote",100],["biscuits simples",20],["cannelle",1]],steps:["Mettre le yaourt soja dans un bol.","Ajouter compote froide.","Émietter les biscuits simples dessus.","Ajouter cannelle si tu veux."]},
+{id:"bananaBreadMini",cat:["Dessert","Collation"],n:"Mini banana bread individuel au four",t:25,mac:{k:285,p:7,c:52,f:6},ing:[["banane",1],["farine",45],["boisson soja",40],["levure",3],["cannelle",2],["huile olive",4]],steps:["Écraser la banane.","Ajouter farine, levure, cannelle, boisson soja et huile.","Verser dans un petit moule ou ramequin compatible four.","Cuire 18-22 min à 180°C."]},
+{id:"galettesAvoineCompote",cat:["Dessert","Collation"],n:"Petites galettes avoine compote",t:18,mac:{k:220,p:5,c:40,f:5},ing:[["avoine",35],["compote",100],["farine",15],["cannelle",2]],steps:["Mélanger avoine, compote, farine et cannelle.","Former 4 petites galettes.","Cuire à la poêle antiadhésive 3-4 min par face ou au four 12 min."]},
+{id:"cakeYaourtSojaCitron",cat:["Dessert","Collation"],n:"Mini cake yaourt soja citron",t:25,mac:{k:260,p:8,c:46,f:6},ing:[["yaourt soja",100],["farine",45],["citron",1],["levure",3],["huile olive",4],["compote",50]],steps:["Mélanger yaourt soja, compote, zeste/jus de citron.","Ajouter farine et levure.","Verser dans petit moule.","Cuire 18-22 min à 180°C."]},
+{id:"energyBallsSansDattes",cat:["Dessert","Collation"],n:"Bouchées avoine compote sans dattes",t:10,mac:{k:210,p:5,c:38,f:5},ing:[["avoine",35],["compote",80],["céréales",15],["cannelle",2]],steps:["Mélanger avoine, compote, céréales écrasées et cannelle.","Former de petites bouchées.","Mettre au frais 20 min si possible.","Se mange froid, sans cuisson."]},
+{id:"wrapSucreSoja",cat:["Dessert","Collation"],n:"Mini wrap soja compote croustillant",t:8,mac:{k:245,p:6,c:45,f:5},ing:[["wrap",0.5],["yaourt soja",80],["compote",80],["céréales",10],["cannelle",1]],steps:["Étaler yaourt soja et compote dans un demi wrap.","Ajouter quelques céréales pour le croustillant.","Plier et passer 1-2 min à la poêle si tu veux, ou manger froid."]},
+{id:"vegePoisChichesFroid",cat:["Froid","Végé","Rapide"],n:"Bowl froid pois chiches crudités",t:10,mac:{k:480,p:20,c:62,f:16},ing:[["pois chiches",250],["concombre",200],["tomate",200],["salade",120],["moutarde",15],["huile olive",10],["compote",100]],steps:["Égoutter les pois chiches.","Couper concombre et tomate.","Mélanger avec salade, moutarde et huile.","Ajouter compote en dessert."]},
+{id:"vegePatesOeufsFroides",cat:["Froid","Végé"],n:"Salade pâtes œufs crudités",t:20,mac:{k:520,p:25,c:65,f:18},ing:[["pâtes normales",130],["oeufs",2],["concombre",150],["tomate",200],["moutarde",15],["huile olive",8]],steps:["Cuire pâtes et œufs.","Refroidir les pâtes.","Mélanger pâtes, œufs, crudités, moutarde et huile.","À manger froid ou tiède."]},
+{id:"vegeOnePotTomateCourgette",cat:["One-pot","Végé"],n:"One-pot pâtes tomate courgette",t:20,mac:{k:500,p:18,c:80,f:12},ing:[["pâtes normales",150],["coulis tomate",250],["courgette",250],["oignon",80],["ail",1],["huile olive",8],["yaourt soja",100]],steps:["Faire revenir ail et oignon.","Ajouter pâtes, coulis tomate, courgette et 350 ml d’eau.","Cuire 12-15 min en remuant.","Ajouter yaourt soja hors feu pour rendre crémeux."]},
+{id:"vegeRiceCookerOeufs",cat:["Rice-cooker","Végé"],n:"Rice-cooker riz légumes œufs",t:30,mac:{k:510,p:24,c:68,f:16},ing:[["riz cru",120],["carotte",200],["haricots verts",150],["oignon",80],["ail",1],["oeufs",2],["sauce soja",15]],steps:["Mettre riz, légumes, ail, oignon et 230 ml d’eau au rice-cooker.","Lancer la cuisson.","Cuire les œufs à part ou les brouiller à la poêle.","Ajouter œufs et sauce soja à la fin."]}];
+
+const weeklyPlans=[
+{Lundi:["ricePouletTomate","boeufRizTomate","miniMuffinsCompote"],Mardi:["boeufRizTomate","curryRC","miniPancakesSoja"],Mercredi:["curryRC","boeufCourgettePates","biscuitBowlSoja"],Jeudi:["boeufCourgettePates","coldBowl","galettesAvoineCompote"],Vendredi:["coldBowl","pouletFajitaBowl","miniCookiesAvoine"],Samedi:["wrapPouletAvocat","boeufMexicain","bananaBreadMini"],Dimanche:["pouletPatesFroides","dahlRC","cakeYaourtSojaCitron"]},
+{Lundi:["rcPouletPetitsPois","burgerBowl","sojaCompote"],Mardi:["burgerBowl","onePotPates","miniCrepesSoja"],Mercredi:["onePotPates","boeufNouillesSoja","barreFruit"],Jeudi:["boeufNouillesSoja","saladePatesPoulet","biscuitBowlSoja"],Vendredi:["saladePatesPoulet","wrapOeufAvocat","miniCookiesAvoine"],Samedi:["thonRizFroid","boeufPatatePoivron","galettesAvoineCompote"],Dimanche:["saladeOeufPdt","vegeRiceCookerOeufs","bananaBreadMini"]},
+{Lundi:["onePotPouletMielSoja","boeufMexicain","miniMuffinsCompote"],Mardi:["boeufMexicain","rcThonTomate","sojaCompote"],Mercredi:["rcThonTomate","pouletCitronRiz","poireCannelle"],Jeudi:["pouletCitronRiz","vegeOnePotTomateCourgette","biscuitBowlSoja"],Vendredi:["vegeOnePotTomateCourgette","pouletOeufWrap","cakeYaourtSojaCitron"],Samedi:["wrapPouletPaprika","boeufFroidPdt","energyBallsSansDattes"],Dimanche:["vegePoisChichesFroid","rcLentillesRiz","miniCrepesSoja"]},
+{Lundi:["boeufCarottesSemoule","ricePouletTomate","wrapSucreSoja"],Mardi:["ricePouletTomate","boeufPatate","miniPancakesSoja"],Mercredi:["boeufPatate","pouletFajitaBowl","galettesAvoineCompote"],Jeudi:["pouletFajitaBowl","vegePatesOeufsFroides","biscuitBowlSoja"],Vendredi:["vegePatesOeufsFroides","onePotRizOeufsTomate","miniCookiesAvoine"],Samedi:["coldPoisChichePoulet","boeufRizTomate","bananaBreadMini"],Dimanche:["wrapPouletAvocat","curryRC","cakeYaourtSojaCitron"]}
 ];
-const baseWeeks=[
-{Lundi:["chickenRice","beefPotato","soyCompote","lower"],Mardi:["beefPotato","chickenCurry","appleCrumble","upper"],Mercredi:["chickenCurry","turkeyPasta","barFruit","walk"],Jeudi:["turkeyPasta","chiliTurkey","soyCompote","core"],Vendredi:["chiliTurkey","eggShak","appleCrumble","walk"],Samedi:["turkeyWrap","tofuNoodles","bananaOat","legs"],Dimanche:["eggShak","chickenRice","soyCompote","rest"]},
-{Lundi:["chickenCurry","chickpeaChicken","appleCrumble","walk"],Mardi:["chickpeaChicken","coralDahl","soyCompote","upper"],Mercredi:["coralDahl","beefPotato","barFruit","lower"],Jeudi:["beefPotato","tofuNoodles","bananaOat","core"],Vendredi:["tofuNoodles","turkeyWrap","appleCrumble","walk"],Samedi:["eggShak","chickenPotatoMustard","soyCompote","legs"],Dimanche:["turkeyPasta","chickenCurry","barFruit","rest"]},
-{Lundi:["beefPotato","chickenRice","bananaOat","lower"],Mardi:["chickenRice","chickpeaChicken","appleCrumble","upper"],Mercredi:["chickpeaChicken","chiliTurkey","soyCompote","walk"],Jeudi:["chiliTurkey","coralDahl","barFruit","core"],Vendredi:["coralDahl","eggShak","appleCrumble","walk"],Samedi:["tofuNoodles","beefPotato","soyCompote","legs"],Dimanche:["turkeyWrap","turkeyPasta","bananaOat","rest"]},
-{Lundi:["turkeyPasta","chickenCurry","soyCompote","walk"],Mardi:["chickenCurry","beefPotato","appleCrumble","upper"],Mercredi:["beefPotato","chickenRice","barFruit","lower"],Jeudi:["chickenRice","chickpeaChicken","bananaOat","core"],Vendredi:["chickpeaChicken","tofuNoodles","soyCompote","walk"],Samedi:["eggShak","chiliTurkey","appleCrumble","legs"],Dimanche:["chickenPotatoMustard","coralDahl","barFruit","rest"]}
-];
-const W={lower:["Jambes + fessiers","20-25 min"],upper:["Bras + dos","20 min"],core:["Bras + ventre tonique","18-22 min"],legs:["Bas du corps sculpt","25-30 min"],walk:["Marche retour maison","45-50 min"],rest:["Récupération active","10-20 min"]};
-const prices={"blanc de poulet":12,"riz cru":2.4,"courgette":2.5,"poivron":4,"huile d'olive":7,"sauce soja":5,"compote":3,"boeuf 5%":14,"pommes de terre":2,"haricots verts":4,"coulis tomate":2,"pomme":2.8,"tomates concassées":2,"carotte":1.6,"épinards":5,"yaourt soja":3.2,"dinde":12,"haricots rouges":3,"maïs":3,"tofu":8,"nouilles":3,"légumes surgelés":3,"banane":2,"wrap":5,"avocat":6,"concombre":2,"tomate":3,"moutarde":2,"oeufs":4,"pain":3,"pâtes normales":2,"pois chiches":3,"salade":8,"avoine":2.2,"boisson soja":1.8,"barre céréales":8,"céréales":4,"chocolat noir":12};
-const foodDB=[["riz cuit",130,2.7,28,.3],["poulet",110,23,0,2],["dinde",115,23,1,2],["boeuf",140,21,0,5],["tofu",120,12,2,7],["oeuf",140,12,1,10],["pomme de terre",77,2,17,.1],["pâtes",350,12,72,1.5],["banane",90,1,23,.3],["pomme",52,.3,14,.2],["compote",65,.3,16,.1],["yaourt soja",55,4,5,2],["huile",900,0,0,100],["pois chiches",160,8,27,2.6],["lentilles corail",350,25,55,2],["barre céréales",390,6,70,9],["avoine",370,13,60,7],["avocat",160,2,9,15],["légumes",35,2,6,.3]];
-function allRecipes(){return baseRecipes.concat(JSON.parse(localStorage.bfCustomRecipes||"[]"))}
-function R(id){return allRecipes().find(x=>x.id==id)||baseRecipes[0]}
-function settings(){return JSON.parse(localStorage.bfSettings||'{"sw":78,"tw":68,"h":169,"age":23,"pace":"optimal","date":"2026-06-09","activity":"medium","theme":"girly","week":1,"calMode":"prudent","customKcal":1400,"applyCustom":"no"}')}
-function saveS(o){localStorage.bfSettings=JSON.stringify(o)}
-function plan(){let key="bfPlan_"+settings().week;if(!localStorage[key])localStorage[key]=JSON.stringify(baseWeeks[settings().week-1]);return JSON.parse(localStorage[key])}
-function savePlan(p){localStorage["bfPlan_"+settings().week]=JSON.stringify(p)}
-function targets(){let s=settings(),b=10*s.sw+6.25*s.h-5*s.age-161,m=s.activity=="low"?1.35:s.activity=="high"?1.65:1.5,t=b*m,d=s.pace=="quick"?650:s.pace=="safe"?350:500;if(s.pace=="custom"){let days=Math.max(1,Math.round((new Date(s.date)-new Date())/864e5)),kg=Math.max(0,s.sw-s.tw);d=Math.min(700,Math.max(350,kg*7700/days))}let raw=Math.round((t-d)/50)*50,min=s.calMode=="rapide"?1300:1400,kcal=Math.max(min,Math.min(1800,raw));if(s.calMode=="custom"&&s.applyCustom=="yes")kcal=Math.max(1200,Math.min(1800,s.customKcal||1400));return{kcal,prot:Math.round(Math.max(105,Math.min(140,s.sw*1.55))),steps:s.activity=="low"?8500:s.activity=="high"?12000:10000,weeks:(s.sw-s.tw)/(d*7/7700),tdee:t,water:2}}
-function macro(m){return `<div>${[["k","kcal",""],["p","prot","g"],["c","gluc","g"],["f","lip","g"],["fi","fibres","g"],["su","sucres","g"],["sat","sat.","g"]].map(a=>`<span class="macro">${a[1]}: ${Math.round((m[a[0]]||0)*10)/10}${a[2]}</span>`).join("")}</div>`}
-function details(m){return `<details><summary>nutrition détaillée</summary><table>${[["Sucres ajoutés","add","g"],["Mono-insaturées","mono","g"],["Polyinsaturées","poly","g"],["Cholestérol","chol","mg"],["Sodium","na","mg"],["Sel","sel","g"],["Eau estimée","eau","ml"],["Alcool","alc","g"]].map(a=>`<tr><td>${a[0]}</td><td>${m[a[1]]||0} ${a[2]}</td></tr>`).join("")}</table></details>`}
-function link(id){return `<a onclick="openRecipe('${id}')">${R(id).n}</a>`}
-function page(id){document.querySelectorAll(".secpage").forEach(x=>x.classList.remove("on"));document.getElementById(id).classList.add("on");document.querySelectorAll(".nav").forEach(x=>x.classList.remove("on"));document.querySelectorAll(`.nav[data-p="${id}"]`).forEach(x=>x.classList.add("on"));scrollTo(0,0); if(id=="historyPage")renderFullHistory();}
-function renderNav(){bottom.innerHTML=pages.map((x,i)=>`<div data-p="${x[0]}" class="nav ${i==0?'on':''}" onclick="page('${x[0]}')"><span>${x[1]}</span>${x[2]}</div>`).join("")}
-function saveSettings(){let s={sw:+sw.value,tw:+tw.value,h:+height.value,age:+age.value,pace:pace.value,date:goaldate.value,activity:activity.value,theme:theme.value,week:+week.value,calMode:calMode.value,customKcal:+customKcal.value||1400,applyCustom:applyCustom.value};saveS(s);renderAll()}
-function loadSettings(){let s=settings();sw.value=s.sw;tw.value=s.tw;height.value=s.h;age.value=s.age;pace.value=s.pace;goaldate.value=s.date;activity.value=s.activity;theme.value=s.theme;week.value=s.week;calMode.value=s.calMode;customKcal.value=s.customKcal;applyCustom.value=s.applyCustom;document.body.className=s.theme=="sobre"?"sobre":""}
-function renderSetup(){let t=targets();kcalDash.textContent=calcKcal.textContent=t.kcal;protDash.textContent=t.prot+"g";stepsDash.textContent=t.steps;waterGoal.textContent=t.water.toFixed(1)+"L";calcWeeks.textContent=isFinite(t.weeks)?Math.round(t.weeks*10)/10+" sem.":"—";calcTxt.innerHTML=`Dépense estimée ${Math.round(t.tdee)} kcal. Objectif : ${t.kcal} kcal/j, ${t.prot}g protéines, ${t.steps} pas.`+(t.kcal<1300?`<div class="warnBox">Alerte : objectif très bas. Surveille fatigue, sommeil, humeur et fringales.</div>`:"")}
-function options(filterCat){return allRecipes().filter(r=>!filterCat||r.cat.includes(filterCat)).map(r=>`<option value="${r.id}">${r.n}</option>`).join("")}
-function renderMeals(){let w=plan(),html="";planDay.innerHTML=Object.keys(w).map(d=>`<option>${d}</option>`).join("");Object.entries(w).forEach(([d,p])=>{html+=`<div class="day"><div class="title">${d}<span class="pill">${W[p[3]][0]}</span></div><p><b>10h :</b> barre céréales sans lait, compote ou fruit.</p><p><b>Midi :</b> ${link(p[0])}</p><p><b>Dessert :</b> ${link(p[2])}</p><p><b>Dîner 20h :</b> ${link(p[1])}</p><p><b>Sport :</b> ${W[p[3]][1]} — ${W[p[3]][0]}</p><div class="swapbox"><div><label>Remplacer le midi</label><select id="swapL-${d}">${options()}</select></div><button class="sec" onclick="setMeal('${d}','lunch',document.getElementById('swapL-${d}').value)">Changer</button></div><div class="swapbox"><div><label>Remplacer le dîner</label><select id="swapD-${d}">${options()}</select></div><button class="sec" onclick="setMeal('${d}','dinner',document.getElementById('swapD-${d}').value)">Changer</button></div><div class="swapbox"><div><label>Remplacer dessert</label><select id="swapS-${d}">${options('Desserts')+options('Collations')}</select></div><button class="sec" onclick="setMeal('${d}','dessert',document.getElementById('swapS-${d}').value)">Changer</button></div><button class="sec" onclick="addRecipeToLog('${p[0]}','${d} midi')">Ajouter midi au journal</button><button class="sec" onclick="addRecipeToLog('${p[1]}','${d} dîner')">Ajouter dîner au journal</button></div>`});mealPlan.innerHTML=html}
-function setMeal(d,type,id){let w=plan();if(type=="lunch")w[d][0]=id;if(type=="dinner")w[d][1]=id;if(type=="dessert")w[d][2]=id;savePlan(w);renderMeals();renderShop()}
-function resetPlan(){localStorage.removeItem("bfPlan_"+settings().week);renderAll()}
-function nextWeek(){let s=settings();s.week=s.week>=4?1:s.week+1;saveS(s);loadSettings();renderAll()}
-function renderCats(){catBar.innerHTML=cats.map(c=>`<span class="cat ${c==activeCat?'on':''}" onclick="activeCat='${c}';renderRecipes()">${c}</span>`).join("")}
-function renderRecipes(){renderCats();let q=(search.value||"").toLowerCase();recipeList.innerHTML=allRecipes().filter(r=>(activeCat=="Toutes"||r.cat.includes(activeCat))&&(!q||(r.n.toLowerCase().includes(q)||r.cat.join(" ").toLowerCase().includes(q)))).map(r=>`<div class="recipe" id="rec-${r.id}"><div class="title">${r.n}<span>${r.cat.map(c=>`<span class="pill">${c}</span>`).join("")}<span class="pill">${r.t} min</span></span></div>${macro(r.mac)}<b>Ingrédients</b><ul>${r.ing.map(i=>`<li>${i[0]} — ${i[1]}${typeof i[1]=="number"&&i[1]>10?" g":""}</li>`).join("")}</ul><b>Étapes</b><ol>${r.steps.map(s=>`<li>${s}</li>`).join("")}</ol>${details(r.mac)}<button class="sec" onclick="addRecipeToLog('${r.id}','recette')">Ajouter au journal</button></div>`).join("")}
-function openRecipe(id){page("recipes");setTimeout(()=>{let e=document.getElementById("rec-"+id);if(e)e.scrollIntoView({behavior:"smooth"})},50)}
-function addCustomRecipe(){let name=(newRecipeName.value||"").trim();if(!name){alert("Ajoute un nom.");return}let ing=(newIngredients.value||"").split("\\n").map(l=>l.trim()).filter(Boolean).map(l=>{let p=l.split(",");return[p[0].trim(),Number(p[1])||p[1]?.trim()||1]});let steps=(newSteps.value||"").split("\\n").map(l=>l.trim()).filter(Boolean);let custom=JSON.parse(localStorage.bfCustomRecipes||"[]");custom.push({id:"custom_"+Date.now(),cat:[newRecipeCat.value],n:name,p:+newRecipePortions.value||1,t:+newRecipeTime.value||20,price:+newRecipePrice.value||4,mac:{k:+newKcal.value||0,p:+newProt.value||0,c:+newCarb.value||0,f:+newFat.value||0,fi:+newFiber.value||0,su:+newSugar.value||0,add:0,sat:0,mono:0,poly:0,chol:0,na:0,sel:0,eau:0,alc:0},ing:ing.length?ing:[["ingrédient",1]],steps:steps.length?steps:["Préparer la recette."]});localStorage.bfCustomRecipes=JSON.stringify(custom);newRecipeName.value="";newIngredients.value="";newSteps.value="";renderAll();alert("Recette ajoutée 🌸")}
-function renderShop(){let w=plan(),tot={};function add(id,scale=1){R(id).ing.forEach(i=>{let q=typeof i[1]=="number"?i[1]*scale:1*scale;tot[i[0]]=(tot[i[0]]||0)+q})}Object.entries(w).forEach(([d,p])=>{add(p[2],1);add(p[1],(["Lundi","Mardi","Mercredi","Jeudi","Dimanche"].includes(d)&&R(p[1]).p==2)?1:(R(p[1]).p==2?.5:1));if(["Samedi","Dimanche"].includes(d))add(p[0],R(p[0]).p==2?.5:1)});let checked=JSON.parse(localStorage.bfShopChecked||"{}"),manual=JSON.parse(localStorage.bfManualShop||"[]"),groups={},cost=0;function cat(n){if(["blanc de poulet","dinde","boeuf 5%","tofu","oeufs"].includes(n))return"Protéines";if(["riz cru","pâtes normales","nouilles","pommes de terre","pain","wrap","avoine","céréales","barre céréales"].includes(n))return"Féculents";if(["courgette","poivron","carotte","épinards","haricots verts","concombre","tomate","salade","légumes surgelés"].includes(n))return"Légumes";if(["pomme","banane","compote"].includes(n))return"Fruits / desserts";return"Épicerie / frais"}Object.entries(tot).forEach(([n,q])=>{let c=q>20?q/1000*(prices[n]||3.5):(prices[n]||3.5)*.15*q;if(["oeufs","wrap","barre céréales"].includes(n))c=(prices[n]||4)*(q/10);c=Math.max(.2,c);cost+=c;let g=cat(n);(groups[g]=groups[g]||[]).push({n,q,c,manual:false})});manual.forEach((it,idx)=>{(groups[it.cat||"Autres"]=groups[it.cat||"Autres"]||[]).push({n:it.name,q:it.qty,c:null,manual:true,idx})});let html=`<div class="metric"><div class="num">~${cost.toFixed(0)}€</div><div class="tiny">estimation hors ajouts manuels</div></div>`;Object.entries(groups).forEach(([g,items])=>{html+=`<div class="shopGroup"><h3>${g}</h3>`;items.sort((a,b)=>a.n.localeCompare(b.n)).forEach(it=>{let id=it.manual?"manual_"+it.idx:("shop_"+settings().week+"_"+it.n).replaceAll(" ","_").replaceAll("'","");let qty=it.manual?it.q:`${Math.round(it.q*10)/10}${it.q>20?" g/env.":""}`,meta=it.manual?`${qty} • ajouté manuellement`:`${qty} • ~${it.c.toFixed(2)}€`;html+=`<label class="shopItem ${checked[id]?'done':''}" id="row-${id}"><input type="checkbox" ${checked[id]?'checked':''} onchange="toggleShop('${id}')"><div class="shopContent"><b>${it.n}</b><div class="shopMeta">${meta}</div></div>${it.manual?`<button type="button" class="bad shopDelete" onclick="event.preventDefault();removeManualShopItem(${it.idx})">suppr.</button>`:""}</label>`});html+=`</div>`});html+=`<div class="btns"><button class="sec" onclick="clearShopChecks()">Décocher</button><button class="bad" onclick="clearManualShop()">Supprimer ajouts</button></div>`;shop.innerHTML=html}
-function addManualShopItem(){let name=(manualShopName.value||"").trim();if(!name){alert("Nom du produit ?");return}let manual=JSON.parse(localStorage.bfManualShop||"[]");manual.push({name,qty:(manualShopQty.value||"1").trim(),cat:manualShopCat.value});localStorage.bfManualShop=JSON.stringify(manual);manualShopName.value="";manualShopQty.value="";renderShop()}
-function removeManualShopItem(i){let m=JSON.parse(localStorage.bfManualShop||"[]");m.splice(i,1);localStorage.bfManualShop=JSON.stringify(m);renderShop()}
-function clearManualShop(){localStorage.bfManualShop="[]";renderShop()}function toggleShop(id){let c=JSON.parse(localStorage.bfShopChecked||"{}");c[id]=!c[id];localStorage.bfShopChecked=JSON.stringify(c);renderShop()}function clearShopChecks(){localStorage.bfShopChecked="{}";renderShop()}
-let flog=JSON.parse(localStorage.bfLog||"[]");function findFood(x){x=x.toLowerCase();return foodDB.find(f=>x.includes(f[0])||f[0].includes(x))}function addFood(){let f=findFood(food.value),q=+qty.value||100;if(!f){foodMsg.innerHTML='<p class="tiny">Pas trouvé. Essaie : riz cuit, poulet, banane, pomme, tofu, œuf, pâtes...</p>';return}flog.push({n:food.value,q,k:f[1]*q/100,p:f[2]*q/100,c:f[3]*q/100,f:f[4]*q/100});localStorage.bfLog=JSON.stringify(flog);food.value="";renderLog()}
-function addRecipeToLog(id,label){let r=R(id);flog.push({n:(label?label+" — ":"")+r.n,q:"1 portion",k:r.mac.k,p:r.mac.p,c:r.mac.c,f:r.mac.f});localStorage.bfLog=JSON.stringify(flog);renderLog();page("journal")}function addPlanMeal(){let w=plan(),d=planDay.value,m=planMeal.value,id=m=="lunch"?w[d][0]:m=="dinner"?w[d][1]:w[d][2];addRecipeToLog(id,d+" "+m)}
-function renderLog(){log.innerHTML=flog.map((x,i)=>`<div class="foodrow"><b>${x.n}</b> — ${x.q}${typeof x.q=="number"?"g":""} ${macro({k:x.k,p:x.p,c:x.c,f:x.f})}<button class="bad" onclick="flog.splice(${i},1);localStorage.bfLog=JSON.stringify(flog);renderLog()">retirer</button></div>`).join("")||"<p class='tiny'>Aucun aliment.</p>";let t=flog.reduce((a,x)=>({k:a.k+x.k,p:a.p+x.p,c:a.c+x.c,f:a.f+x.f}),{k:0,p:0,c:0,f:0});totals.innerHTML=`<div class="metric"><div class="num">${Math.round(t.k)}</div><div class="tiny">kcal / ${targets().kcal}</div></div>${macro(t)}`}function clearLog(){flog=[];localStorage.bfLog="[]";renderLog()}
-function renderSport(){let mode=sportMode.value,lvl=+sportLevel.value,focus=sportFocus.value,modeLabel={express:"Express 15 min",standard:"Standard 30 min",intense:"Intense 45 min"}[mode],mult=mode=="express"?1:mode=="standard"?1.45:2.05,rounds=mode=="express"?2:mode=="standard"?3:4;if(lvl==2)rounds++;let rest=mode=="intense"?"30-45 sec":"45-75 sec",lib={lower:[["Squat lent",12,"Pieds largeur épaules, descends lentement."],["Fentes arrière",10,"Buste droit, genou stable."],["Glute bridge",18,"Serre les fessiers en haut."],["Good morning sac à dos",12,"Hanches vers l’arrière, dos droit."],["Wall sit",30,"Dos au mur."],["Side leg raises",16,"Mouvement lent."]],upper:[["Pompes inclinées",8,"Mains sur table stable."],["Row sac à dos",12,"Serre les omoplates."],["Shoulder press",12,"Ne cambre pas."],["Curl biceps",14,"Coudes proches du corps."],["Dips chaise",10,"Épaules basses."],["Lateral raises",12,"Bras légèrement fléchis."]],core:[["Dead bug",10,"Bas du dos proche du sol."],["Planche",25,"Bassin stable."],["Heel taps",16,"Contrôlé."],["Side plank",18,"Épaule au-dessus du coude."],["Bird dog",10,"Dos stable."],["Mountain climber lent",18,"Silencieux."]],full:[["Squat",12,"Rythme calme."],["Pompes murales",12,"Facile mais efficace."],["Glute bridge",18,"Fessiers actifs."],["Row sac à dos",12,"Dos."],["Marche rapide sur place",45,"Sans saut."],["Planche",20,"Core."]]};let w=plan(),html="";Object.entries(w).forEach(([d,p])=>{let type=p[3]=="upper"?"upper":p[3]=="core"?"core":(p[3]=="walk"||p[3]=="rest"?"full":"lower"),bonus=focus=="event"?"🔥 Finisher : 5 min cardio doux.":focus=="legs"?"🍑 Bonus : 2×25 frog pumps.":focus=="arms"?"💪 Bonus : 2×15 curls.":"✨ Technique propre + pas quotidiens.";html+=`<div class="work"><div class="title">${d} — ${type.toUpperCase()} <span class="pill">${modeLabel}</span></div><p class="tiny"><b>${rounds} tours</b> • repos ${rest} • niveau ${lvl==1?"débutante":"intermédiaire"}</p>`;lib[type].forEach(e=>{let isTime=e[0].toLowerCase().includes("planche")||e[0].toLowerCase().includes("wall")||e[0].toLowerCase().includes("marche"),qty=Math.round(e[1]*mult);html+=`<div class="exerciseBlock"><h4>${e[0]} — ${qty}${isTime?" sec":" reps"}</h4><p class="tiny">${e[2]}</p></div>`});html+=`<p class="tiny">${bonus}</p><p class="tiny"><b>Version crevée :</b> 2 tours suffisent.</p></div>`});sportPlan.innerHTML=html}
-function sos(){let m={sucre:["Eau ou thé 5 min.","Option prévue : compote + yaourt soja, pomme crumble, ou barre + fruit.","Ne mange pas au paquet."],stress:["Respiration 4-6 pendant 3 min.","Écris l’émotion exacte.","Douche chaude ou marche courte."],fatigue:["Pas de sport dur.","Dîner simple + lunchbox + lit.","Objectif : ne pas commander par épuisement."],faim:["Ajoute protéines/légumes.","Œufs, dinde, yaourt soja, pois chiches.","Vérifie si collation 10h oubliée."],ennui:["Range 5 min avec musique.","Prépare gourde + collation demain.","Puis dessert prévu si envie encore là."]}[reason.value];sosResult.innerHTML=`<h3>Plan SOS</h3><ol>${m.map(x=>`<li>${x}</li>`).join("")}</ol>`}
-function renderDesserts(){desserts.innerHTML=allRecipes().filter(r=>r.cat.includes("Desserts")||r.cat.includes("Collations")).map(r=>`<div class="box">${link(r.id)} ${macro(r.mac)}<button class="sec" onclick="addRecipeToLog('${r.id}','dessert/collation')">Ajouter au journal</button></div>`).join("")}
-function waterPlus(){waterC++;renderWater();updateScore()}function waterMinus(){waterC=Math.max(0,waterC-1);renderWater();updateScore()}function renderWater(){waterLiters.textContent=(waterC*.25).toFixed(1)+"L";waterCups.textContent=waterC;cups.innerHTML=Array.from({length:8},(_,i)=>`<div class="cup ${i<waterC?'filled':''}"></div>`).join("")}
-function saveCheck(){let arr=JSON.parse(localStorage.bfChecks||"[]"),d={date:date.value,sleep:sleep.value,mood:mood.value,water:(waterC*.25).toFixed(2),cups:waterC,steps:steps.value,waist:waist.value,l:clunch.checked,s:csnack.checked,w:csport.checked,c:ccrack.checked,note:note.value,score:getScore()};let i=arr.findIndex(x=>x.date==d.date);if(i>=0)arr[i]=d;else arr.push(d);localStorage.bfChecks=JSON.stringify(arr);renderHist();renderFullHistory();updateScore()}
-function getScore(){let sc=0,t=targets();if(+sleep.value>=7)sc++;if(waterC*.25>=t.water)sc++;if(+steps.value>=t.steps*.8)sc++;[clunch,csnack,csport,ccrack].forEach(x=>{if(x.checked)sc++});if(+mood.value<=6)sc++;return sc}
-function updateScore(){moodVal.textContent=mood.value;let s=getScore();score.textContent=s+"/8";bar.style.width=s/8*100+"%";advice.textContent=s>=7?"Journée très solide.":s>=5?"Bonne journée. Petit ajustement demain.":"Reset doux : lunch + collation + eau + sommeil."}
-function renderHist(){let arr=JSON.parse(localStorage.bfChecks||"[]").reverse();history.innerHTML=arr.length?`<table><tr><th>Date</th><th>Score</th><th>Sommeil</th><th>Eau</th><th>Pas</th></tr>${arr.slice(0,8).map(d=>`<tr><td>${d.date}</td><td>${d.score}/8</td><td>${d.sleep||"-"}</td><td>${d.water||"-"}L</td><td>${d.steps||"-"}</td></tr>`).join("")}</table>`:"<p class='tiny'>Aucun check-in.</p>"}
-function renderFullHistory(){let arr=JSON.parse(localStorage.bfChecks||"[]"),avg=arr.length?Math.round(arr.reduce((a,x)=>a+(+x.score||0),0)/arr.length*10)/10:0,best=arr.length?Math.max(...arr.map(x=>+x.score||0)):0,wa=arr.map(x=>+x.waist).filter(Boolean),wt=wa.length?`${wa[0]} → ${wa[wa.length-1]} cm`:"—";historyStats.innerHTML=`<div class="metric"><div class="num">${arr.length}</div><div class="tiny">check-ins</div></div><div class="metric"><div class="num">${avg}/8</div><div class="tiny">score moyen</div></div><div class="metric"><div class="num">${best}/8</div><div class="tiny">meilleur score</div></div><div class="metric"><div class="num" style="font-size:1.1rem">${wt}</div><div class="tiny">taille</div></div>`;fullHistory.innerHTML=arr.length?`<table><tr><th>Date</th><th>Score</th><th>Sommeil</th><th>Eau</th><th>Pas</th><th>Note</th></tr>${arr.slice().reverse().map(d=>`<tr><td>${d.date}</td><td>${d.score}/8</td><td>${d.sleep||"-"}</td><td>${d.water||"-"}L</td><td>${d.steps||"-"}</td><td>${(d.note||"").slice(0,90)}</td></tr>`).join("")}</table>`:"<p class='tiny'>Pas encore d’historique.</p>";foodHistory.innerHTML=flog.length?flog.map(x=>`<div class="foodrow"><b>${x.n}</b> ${macro({k:x.k,p:x.p,c:x.c,f:x.f})}</div>`).join(""):"<p class='tiny'>Journal vide.</p>"}
-function fatigue(){fatigueBox.style.display="block";fatigueBox.innerHTML="<b>Mode crevée :</b><ol><li>Tenue confortable.</li><li>10 min seulement : squats, glute bridge, pompes murales, planche.</li><li>Douche.</li><li>Dîner + lunchbox.</li></ol>"}
-function renderAll(){loadSettings();renderSetup();renderMeals();renderRecipes();renderShop();renderSport();renderLog();renderDesserts();renderHist();renderFullHistory();renderWater();updateScore()}
-document.addEventListener("input",e=>{if(["sleep","steps","mood"].includes(e.target.id))updateScore()});document.addEventListener("change",e=>{if(["clunch","csnack","csport","ccrack"].includes(e.target.id))updateScore()});
+const basePlan=weeklyPlans[0];
+
+function allRecipes(){return baseRecipes.concat(JSON.parse(localStorage.bfCustomRecipes103||"[]"))}
+function getRecipe(id){return allRecipes().find(r=>r.id===id)||baseRecipes[0]}
+function weekOffset(){return +(localStorage.bfMealWeekOffset103||0)}
+function mondayOfWeek(offset=0){
+ const d=new Date(); const day=d.getDay(); const diff=(day===0?-6:1-day)+offset*7;
+ d.setDate(d.getDate()+diff); d.setHours(0,0,0,0); return d;
+}
+function addDays(date,days){const d=new Date(date);d.setDate(d.getDate()+days);return d}
+function fmtDate(d){return d.toLocaleDateString("fr-FR",{day:"2-digit",month:"2-digit"})}
+function weekLabel(offset=0){
+ const start=mondayOfWeek(offset), end=addDays(start,6);
+ return "du "+fmtDate(start)+" au "+fmtDate(end);
+}
+function sundayLabel(offset=0){
+ const start=addDays(mondayOfWeek(offset),-1), end=addDays(start,7);
+ return "du dimanche "+fmtDate(start)+" au dimanche "+fmtDate(end);
+}
+function planKey(offset=weekOffset()){return "bfPlan109_w"+offset}
+function getPlan(offset=weekOffset()){
+ const key=planKey(offset);
+ if(!localStorage[key]){
+   const base=weeklyPlans[((offset % weeklyPlans.length)+weeklyPlans.length)%weeklyPlans.length] || weeklyPlans[0];
+   localStorage[key]=JSON.stringify(base);
+ }
+ return JSON.parse(localStorage[key]);
+}
+function resetCurrentWeekPlan(){
+ const offset=weekOffset();
+ localStorage.removeItem(planKey(offset));
+ activeDay="";
+ renderMeals();
+ renderShop();
+}
+function savePlan(p,offset=weekOffset()){localStorage[planKey(offset)]=JSON.stringify(p)}
+function getSettings(){return JSON.parse(localStorage.bfSettings103||'{"sw":78,"tw":68,"height":169,"age":23,"pace":"optimal","goalDate":"2026-06-09","activity":"medium","theme":"girly","calMode":"prudent"}')}
+function saveSettingsObj(s){localStorage.bfSettings103=JSON.stringify(s)}
+
+function target(){
+ const s=getSettings(); const b=10*s.sw+6.25*s.height-5*s.age-161;
+ const tdee=b*(s.activity==="low"?1.35:s.activity==="high"?1.65:1.5);
+ let deficit=s.pace==="safe"?350:s.pace==="quick"?650:500;
+ if(s.pace==="date"){const days=Math.max(1,Math.round((new Date(s.goalDate)-new Date())/864e5)); const kg=Math.max(0,s.sw-s.tw); deficit=Math.max(350,Math.min(700,kg*7700/days));}
+ let kcal=Math.round((tdee-deficit)/50)*50;
+ if(s.calMode==="rapide"){
+  kcal=Math.max(1300,Math.min(1700,kcal-150));
+}else{
+  kcal=Math.max(1400,Math.min(1800,kcal));
+}
+ return {kcal, prot:Math.round(Math.max(105,Math.min(140,s.sw*1.55))), steps:s.activity==="low"?8500:s.activity==="high"?12000:10000, tdee};
+}
+function macro(m){return `<div><span class="macro">${m.k} kcal</span><span class="macro">P ${m.p}g</span><span class="macro">G ${m.c}g</span><span class="macro">L ${m.f}g</span></div>`}
+function showPage(id){document.querySelectorAll(".page").forEach(p=>p.classList.remove("on"));document.getElementById(id).classList.add("on");document.querySelectorAll(".nav").forEach(n=>n.classList.remove("on"));document.querySelectorAll(`[data-p="${id}"]`).forEach(n=>n.classList.add("on"));if(id==="history")renderHistory();window.scrollTo(0,0)}
+function renderNav(){nav.innerHTML=navPages.map((n,i)=>`<div data-p="${n[0]}" class="nav ${i===0?'on':''}" onclick="showPage('${n[0]}')"><span>${n[1]}</span>${n[2]}</div>`).join("")}
+function loadSettings(){const s=getSettings();sw.value=s.sw;tw.value=s.tw;heightInput.value=s.height;ageInput.value=s.age;pace.value=s.pace;goalDate.value=s.goalDate;activity.value=s.activity;theme.value=s.theme;calMode.value=s.calMode;document.body.className=s.theme==="sobre"?"sobre":""}
+function saveSettings(){saveSettingsObj({sw:+sw.value,tw:+tw.value,height:+heightInput.value,age:+ageInput.value,pace:pace.value,goalDate:goalDate.value,activity:activity.value,theme:theme.value,calMode:calMode.value});renderAll()}
+function renderSetup(){const t=target();kcalDash.textContent=t.kcal;protDash.textContent=t.prot+"g";stepsDash.textContent=t.steps;calcBox.innerHTML=`<b>${t.kcal} kcal/j</b><br>Protéines : ${t.prot}g • Pas : ${t.steps}<br>Dépense estimée : ${Math.round(t.tdee)} kcal/j`}
+
+function lunchRecipeForDay(day, offset=weekOffset()){
+ if(day==="Lundi"){
+   const prevPlan=getPlan(offset-1);
+   return prevPlan["Dimanche"][1]; // lundi midi = dîner du dimanche soir de la semaine précédente
+ }
+ const p=getPlan(offset);
+ const prev={Mardi:"Lundi",Mercredi:"Mardi",Jeudi:"Mercredi",Vendredi:"Jeudi"};
+ if(prev[day]) return p[prev[day]][1]; // lunch = reste du dîner de la veille
+ return p[day][0]; // week-end / repas prévu 1 portion
+}
+function lunchTextForDay(day, offset=weekOffset()){
+ if(day==="Lundi") return "reste du dîner du dimanche soir précédent";
+ if(["Mardi","Mercredi","Jeudi","Vendredi"].includes(day)) return "reste du dîner de la veille";
+ return "repas prévu";
+}
+
+function todayName(){return ["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"][new Date().getDay()]}
+function recipeLink(id){return `<a onclick="openRecipe('${id}')">${getRecipe(id).n}</a>`}
+function selectOptions(filter){return allRecipes().filter(r=>!filter||r.cat.includes(filter)).map(r=>`<option value="${r.id}">${r.n}</option>`).join("")}
+function switchMealWeek(){
+ localStorage.bfMealWeekOffset103=mealWeek.value;
+ activeDay="";
+ renderMeals();
+ renderShop();
+}
+function renderMeals(){const p=getPlan(); if(document.getElementById("mealWeek")){mealWeek.value=weekOffset(); mealWeekInfo.textContent=weekLabel(weekOffset())+" • Menu "+((weekOffset()%weeklyPlans.length)+1)+"/"+weeklyPlans.length;} if(!activeDay)activeDay=todayName();dayTabs.innerHTML=Object.keys(p).map(d=>`<span class="tab ${d===activeDay?'on':''}" onclick="activeDay='${d}';renderMeals()">${d}</span>`).join("");journalDay.innerHTML=Object.keys(p).map(d=>`<option>${d}</option>`).join("");const x=p[activeDay];mealBox.innerHTML=`<div class="day"><div class="title">${activeDay}</div><p><b>Midi :</b> ${recipeLink(lunchRecipeForDay(activeDay))} <span class="pill">${lunchTextForDay(activeDay)}</span></p><p><b>Dîner :</b> ${recipeLink(x[1])}</p><p><b>Dessert :</b> ${recipeLink(x[2])}</p><label>Changer midi</label><select id="selLunch">${selectOptions()}</select><button class="sec" onclick="changeLunch(selLunch.value)">Changer midi</button><p class="tiny">Du lundi au vendredi, le midi suit automatiquement le dîner de la veille. Le dimanche soir prépare donc le lundi midi.</p><label>Changer dîner</label><select id="selDinner">${selectOptions()}</select><button class="sec" onclick="changeMeal(1,selDinner.value)">Changer dîner</button><label>Changer dessert</label><select id="selDessert">${selectOptions('Dessert')+selectOptions('Collation')}</select><button class="sec" onclick="changeMeal(2,selDessert.value)">Changer dessert</button><button onclick="addLog(lunchRecipeForDay(activeDay),'${activeDay} midi')">Ajouter midi au journal</button></div>`}
+function changeLunch(id){
+ if(["Samedi","Dimanche"].includes(activeDay)){
+   const p=getPlan();
+   p[activeDay][0]=id;
+   savePlan(p);
+ }else if(activeDay==="Lundi"){
+   const prev=getPlan(weekOffset()-1);
+   prev["Dimanche"][1]=id;
+   savePlan(prev, weekOffset()-1);
+ }else{
+   const p=getPlan();
+   const prevDay={Mardi:"Lundi",Mercredi:"Mardi",Jeudi:"Mercredi",Vendredi:"Jeudi"}[activeDay];
+   p[prevDay][1]=id;
+   savePlan(p);
+ }
+ renderMeals(); renderShop();
+}
+function changeMeal(i,id){const p=getPlan();p[activeDay][i]=id;savePlan(p);renderMeals();renderShop()}
+
+
+function spiceFor(r){
+ const name=(r.n+" "+r.cat.join(" ")).toLowerCase();
+ if(name.includes("mexicain")||name.includes("fajita")) return "paprika fumé, cumin, ail, oignon, poivre, un peu de citron si tu as.";
+ if(name.includes("curry")||name.includes("dahl")||name.includes("lentilles")) return "curry doux, cumin, ail, oignon, poivre, pincée de sel.";
+ if(name.includes("boeuf")||name.includes("bœuf")||name.includes("burger")) return "paprika fumé, ail, oignon, poivre, herbes de Provence ou moutarde.";
+ if(name.includes("poulet")) return "paprika doux/fumé, ail, oignon, poivre, herbes de Provence, citron ou sauce soja selon la recette.";
+ if(name.includes("froid")||name.includes("salade")||name.includes("wrap")) return "moutarde, citron, poivre, ail en poudre, herbes, paprika doux.";
+ if(name.includes("dessert")||name.includes("cake")||name.includes("muffin")||name.includes("cookie")) return "cannelle, vanille, zeste de citron, pincée de sel.";
+ return "ail, oignon, poivre, paprika doux, herbes de Provence selon ton goût.";
+}
+
+function renderRecipes(){catBar.innerHTML=categoryList.map(c=>`<span class="cat ${c===activeCategory?'on':''}" onclick="activeCategory='${c}';renderRecipes()">${c}</span>`).join("");const q=(search.value||"").toLowerCase();recipesList.innerHTML=allRecipes().filter(r=>(activeCategory==="Toutes"||r.cat.includes(activeCategory))&&(!q||r.n.toLowerCase().includes(q)||r.cat.join(" ").toLowerCase().includes(q))).map(r=>`<div class="recipe" id="rec-${r.id}"><div class="title">${r.n}<span>${r.cat.map(c=>`<span class="pill">${c}</span>`).join("")}<span class="pill">${r.t} min</span></span></div>${macro(r.mac)}<b>Ingrédients</b><ul>${r.ing.map(i=>`<li>${i[0]} — ${i[1]}${typeof i[1]==="number"&&i[1]>5?" g":""}</li>`).join("")}</ul><b>Assaisonnement conseillé</b><p class="tiny">${spiceFor(r)}</p><b>Étapes</b><ol>${r.steps.map(s=>`<li>${s}</li>`).join("")}</ol><button class="sec" onclick="addLog('${r.id}','recette')">Ajouter au journal</button></div>`).join("")}
+function openRecipe(id){showPage("recipes");setTimeout(()=>document.getElementById("rec-"+id)?.scrollIntoView({behavior:"smooth"}),50)}
+function addRecipe(){if(!newName.value.trim())return alert("Nom de recette ?");const arr=JSON.parse(localStorage.bfCustomRecipes103||"[]");arr.push({id:"custom_"+Date.now(),cat:[newCat.value],n:newName.value.trim(),t:+newTime.value||25,mac:{k:+newKcal.value||500,p:+newProt.value||30,c:50,f:15},ing:newIng.value.split("\\n").filter(Boolean).map(l=>{const p=l.split(",");return [p[0].trim(),Number(p[1])||p[1]||1]}),steps:newSteps.value.split("\\n").filter(Boolean)});localStorage.bfCustomRecipes103=JSON.stringify(arr);newName.value=newIng.value=newSteps.value="";renderAll();alert("Recette ajoutée")}
+
+function formatQty(q){
+  if(q>=1000 && q%1000===0) return (q/1000)+" kg";
+  if(q>=1000) return (Math.round(q/100)/10)+" kg";
+  return Math.ceil(q)+" g";
+}
+function roundPack(n,q){
+ const gramsToPack={"yaourt soja":[150,4,"pots"],"compote":[100,4,"pots"]};
+ const unitPack={"wrap":[6,"pièces"],"barre céréales":[6,"pièces"],"oeufs":[6,"pièces"]};
+ const gramPack={"riz cru":[500],"pâtes normales":[500],"avoine":[500],"lentilles corail":[500],"tomates concassées":[400],"coulis tomate":[500],"farine":[1000],"pommes de terre":[1000]};
+ if(gramsToPack[n]){let [per,pack,label]=gramsToPack[n];let units=Math.ceil(q/per);return Math.ceil(units/pack)*pack+" "+label}
+ if(unitPack[n]){let [pack,label]=unitPack[n];return Math.ceil(q/pack)*pack+" "+label}
+ if(gramPack[n]){let pack=gramPack[n][0];return formatQty(Math.ceil(q/pack)*pack)}
+ if(n==="ail")return "1 tête";
+ if(n==="citron")return Math.ceil(q)+" citron(s)";
+ if(n==="oignon")return Math.ceil(q/100)+" oignon(s)";
+ return q>10?formatQty(Math.ceil(q/50)*50):Math.ceil(q)+" pièce";
+}
+function shiftedPlan(){
+ const p=JSON.parse(JSON.stringify(getPlan()));
+ const keys=Object.keys(p);
+ const vals=keys.map(k=>p[k]);
+ keys.forEach((k,i)=>p[k]=vals[(i+1)%vals.length]);
+ return p;
+}
+function shopPlanByPeriod(){
+ const period=(document.getElementById("shopPeriod")?shopPeriod.value:"current");
+ if(period==="next") return shiftedPlan();
+ return getPlan();
+}
+function recipePortions(id){
+ const r=getRecipe(id);
+ if(r.cat && (r.cat.includes("Dessert")||r.cat.includes("Collation")||r.cat.includes("Rapide")&&r.n.toLowerCase().includes("wrap"))) return 1;
+ if(r.n.toLowerCase().includes("wrap")) return 1;
+ return 2;
+}
+function planForShoppingOffset(offset){
+  const base = weeklyPlans[offset % weeklyPlans.length] || weeklyPlans[0];
+  const saved = localStorage[planKey(offset)];
+  return saved ? JSON.parse(saved) : JSON.parse(JSON.stringify(base));
+}
+function getManualShop(){return JSON.parse(localStorage.bfManualShop103||"[]")}
+function saveManualShop(arr){localStorage.bfManualShop103=JSON.stringify(arr)}
+function addManualShopItem(){
+ const name=(manualShopName.value||"").trim();
+ if(!name){alert("Nom du produit ?");return}
+ const arr=getManualShop();
+ arr.push({name,qty:(manualShopQty.value||"1").trim(),cat:manualShopCat.value});
+ saveManualShop(arr);
+ manualShopName.value=""; manualShopQty.value="";
+ renderShop();
+}
+function removeManualShopItem(i){
+ const arr=getManualShop();
+ arr.splice(i,1);
+ saveManualShop(arr);
+ renderShop();
+}
+function renderShop(){
+ const period=(document.getElementById("shopPeriod")?shopPeriod.value:"current");
+
+ let offset=0;
+ let label="semaine actuelle "+weekLabel(0);
+ if(period==="next"){ offset=1; label="semaine prochaine "+weekLabel(1); }
+ if(period==="sunday"){ offset=1; label=sundayLabel(1); }
+
+ const p=planForShoppingOffset(offset);
+ const prevP=planForShoppingOffset(offset-1);
+
+ if(document.getElementById("shopInfo")){
+   shopInfo.textContent="Courses pour : "+label+" • Menu "+((offset%weeklyPlans.length)+1)+"/"+weeklyPlans.length;
+ }
+
+ const meals=[];
+ function pushMeal(day, moment, id, portions){
+   meals.push({day,moment,id,portions,name:getRecipe(id).n});
+ }
+
+ if(period==="sunday"){
+   // Dimanche -> dimanche prochain : on prépare la semaine à venir.
+   // Dimanche midi = repas prévu 1 portion.
+   // Dimanche soir = 2 portions, dont lundi midi.
+   pushMeal("Dimanche","midi",p["Dimanche"][0],1);
+   pushMeal("Dimanche","soir",p["Dimanche"][1],2);
+   ["Lundi","Mardi","Mercredi","Jeudi"].forEach(d=>pushMeal(d,"soir",p[d][1],2));
+   pushMeal("Vendredi","soir",p["Vendredi"][1],1);
+   pushMeal("Samedi","midi",p["Samedi"][0],1);
+   pushMeal("Samedi","soir",p["Samedi"][1],1);
+   pushMeal("Dimanche suivant","midi",p["Dimanche"][0],1);
+   Object.keys(p).forEach(d=>pushMeal(d,"dessert/collation",p[d][2],1));
+ }else{
+   // Semaine actuelle/prochaine : midis de semaine = restes, donc on compte les dîners.
+   ["Lundi","Mardi","Mercredi","Jeudi"].forEach(d=>pushMeal(d,"soir",p[d][1],2));
+   pushMeal("Vendredi","soir",p["Vendredi"][1],1);
+   pushMeal("Samedi","midi",p["Samedi"][0],1);
+   pushMeal("Samedi","soir",p["Samedi"][1],1);
+   pushMeal("Dimanche","midi",p["Dimanche"][0],1);
+   pushMeal("Dimanche","soir",p["Dimanche"][1],2);
+   Object.keys(p).forEach(d=>pushMeal(d,"dessert/collation",p[d][2],1));
+ }
+
+ const tot={};
+ meals.forEach(meal=>{
+   const r=getRecipe(meal.id);
+   const scale=meal.portions/recipePortions(meal.id);
+   r.ing.forEach(i=>{
+     const q=typeof i[1]==="number"?i[1]*scale:1*scale;
+     tot[i[0]]=(tot[i[0]]||0)+q;
+   });
+ });
+
+ const checked=JSON.parse(localStorage.bfShopChecked103||"{}");
+ const preview=`<div class="box tiny"><b>Aperçu repas comptés :</b><br>${meals.map(m=>m.day+" "+m.moment+" : "+m.name+" ("+m.portions+" portion"+(m.portions>1?"s":"")+")").join(" • ")}</div>`;
+
+ let autoList=Object.entries(tot).sort().map(([n,q])=>{
+   const id=(label+"_"+n).replaceAll(" ","_");
+   return `<label class="shop ${checked[id]?'done':''}"><input type="checkbox" ${checked[id]?'checked':''} onchange="let c=JSON.parse(localStorage.bfShopChecked103||'{}');c['${id}']=this.checked;localStorage.bfShopChecked103=JSON.stringify(c);renderShop()"> <b>${n}</b><div class="tiny">${roundPack(n,q)}</div></label>`;
+ }).join("");
+
+ const manual=getManualShop();
+ const manualList=manual.length?`<div class="box"><b>Ajouts manuels</b></div>`+manual.map((it,i)=>{
+   const id=("manual_"+i+"_"+it.name).replaceAll(" ","_");
+   return `<label class="shop ${checked[id]?'done':''}"><input type="checkbox" ${checked[id]?'checked':''} onchange="let c=JSON.parse(localStorage.bfShopChecked103||'{}');c['${id}']=this.checked;localStorage.bfShopChecked103=JSON.stringify(c);renderShop()"> <span><b>${it.name}</b><div class="tiny">${it.qty} • ${it.cat}</div></span><button type="button" class="bad" onclick="event.preventDefault();removeManualShopItem(${i})">suppr.</button></label>`;
+ }).join(""):"";
+
+ shopList.innerHTML=preview+autoList+manualList;
+}
+
+let logItems=JSON.parse(localStorage.bfLog103||"[]");
+function todayISO(){return new Date().toISOString().slice(0,10)}
+function addLog(id,label){const r=getRecipe(id);logItems.push({date:todayISO(),n:label+" — "+r.n,...r.mac});localStorage.bfLog103=JSON.stringify(logItems);renderLog();showPage("journal")}
+function addPlannedMeal(){const p=getPlan(),d=journalDay.value,i=+journalMeal.value;const id=i===0?lunchRecipeForDay(d):p[d][i];addLog(id,d)}
+function renderLog(){const arr=logItems.filter(x=>x.date===todayISO());logBox.innerHTML=arr.map((x,i)=>`<div class="food"><b>${x.n}</b>${macro(x)}<button class="bad" onclick="removeLog(${i})">retirer</button></div>`).join("")||"<p class='tiny'>Journal vide aujourd’hui.</p>";const t=arr.reduce((s,x)=>({k:s.k+x.k,p:s.p+x.p,c:s.c+x.c,f:s.f+x.f}),{k:0,p:0,c:0,f:0});totalsBox.innerHTML=`<div class="num">${Math.round(t.k)} kcal</div>${macro(t)}`}
+function removeLog(i){const today=logItems.filter(x=>x.date===todayISO()),item=today[i],idx=logItems.indexOf(item);logItems.splice(idx,1);localStorage.bfLog103=JSON.stringify(logItems);renderLog()}
+
+function renderSport(){const days=["Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"];if(!activeSportDay)activeSportDay=todayName();sportDayTabs.innerHTML=days.map(d=>`<span class="tab ${d===activeSportDay?'on':''}" onclick="activeSportDay='${d}';renderSport()">${d}</span>`).join("");const mode=sportMode.value,l=+sportLevel.value,focus=sportFocus.value;let rounds=mode==="express"?2:mode==="standard"?3:4;if(l===2)rounds++;const reps=mode==="express"?12:mode==="standard"?16:22;const weekType={Lundi:"legs",Mardi:"arms",Mercredi:"shape",Jeudi:"legs",Vendredi:"arms",Samedi:"event",Dimanche:"shape"};const f=focus==="auto"?weekType[activeSportDay]:focus;const ex={shape:["Squat","Pompes inclinées","Glute bridge","Row sac à dos","Planche"],legs:["Squat lent","Fentes arrière","Frog pumps","Side leg raises","Wall sit"],arms:["Pompes inclinées","Curl bouteilles","Dips chaise","Shoulder press","Lateral raises"],event:["Squat","Marche rapide","Pompes murales","Mountain climber lent","Planche"]};sportBox.innerHTML=`<div class="title">${activeSportDay} — focus ${f}</div>`+ex[f].map(e=>`<div class="ex"><h3>${e}</h3><p>${rounds} tours • ${reps} reps ou 30 sec • repos 45-75 sec.</p><p class="tiny">Version crevée : 2 tours. Technique propre, mouvement contrôlé.</p></div>`).join("")}
+
+function tiredMode(){tiredBox.style.display="block";tiredBox.innerHTML="<b>Mode je suis crevée :</b><ol><li>10 min seulement : squats, glute bridge, pompes murales, planche.</li><li>Douche.</li><li>Dîner simple + lunchbox.</li><li>Objectif : ne pas craquer, pas être parfaite.</li></ol>"}
+function renderSOS(){const r=sosReason.value;const map={sucre:["Bois un verre d’eau ou thé.","Prends une option prévue : compote, pudding soja cacao, pomme crumble.","Ne mange pas au paquet : mets une portion."],fatigue:["Pas de séance intense.","Fais dîner très simple + douche + lit.","Si besoin : mode sport 10 min seulement."],stress:["Respiration 4-6 pendant 3 min.","Écris ce qui te stresse en une phrase.","Douche chaude ou marche courte."],faim:["Vraie faim = ajoute protéines/légumes.","Option rapide : œufs, thon, poulet, yaourt soja.","Évite d’attendre trop longtemps."],ennui:["Occupe tes mains 5 min : rangement, douche, sac demain.","Si envie encore là : dessert prévu sans culpabilité."]};sosResult.innerHTML="<h3>Plan SOS</h3><ol>"+map[r].map(x=>"<li>"+x+"</li>").join("")+"</ol>"}
+
+function water(x){waterCups=Math.max(0,waterCups+x);waterTxt.textContent=(waterCups*.25).toFixed(1)+"L";cups.innerHTML=Array.from({length:8},(_,i)=>`<span class="cup ${i<waterCups?'on':''}"></span>`).join("");scoreNow()}
+function scoreNow(){moodVal.textContent=mood.value;let s=0,t=target();if(+sleep.value>=7)s++;if(waterCups*.25>=2)s++;if(+steps.value>=t.steps*.8)s++;[c1,c2,c3,c4].forEach(x=>{if(x.checked)s++});if(+mood.value<=6)s++;score.textContent=s+"/8";advice.textContent=s>=7?"Très solide.":s>=5?"Bonne base.":"Reset doux."}
+function saveCheck(){const a=JSON.parse(localStorage.bfChecks103||"[]"),d={date:date.value,score:score.textContent,sleep:sleep.value,water:(waterCups*.25).toFixed(1),steps:steps.value,waist:waist.value,note:note.value};const i=a.findIndex(x=>x.date===d.date);if(i>=0)a[i]=d;else a.push(d);localStorage.bfChecks103=JSON.stringify(a);renderHistory();alert("Sauvé")}
+function renderHistory(){const a=JSON.parse(localStorage.bfChecks103||"[]");historyBox.innerHTML=a.length?`<table><tr><th>Date</th><th>Score</th><th>Sommeil</th><th>Eau</th><th>Pas</th></tr>${a.slice().reverse().map(x=>`<tr><td>${x.date}</td><td>${x.score}</td><td>${x.sleep}</td><td>${x.water}L</td><td>${x.steps}</td></tr>`).join("")}</table>`:"<p class='tiny'>Aucun historique.</p>"}
+function renderAll(){loadSettings();renderSetup();renderMeals();renderRecipes();renderShop();renderLog();renderSport();renderHistory();water(0);scoreNow()}
+document.addEventListener("input",e=>{if(["sleep","steps","mood"].includes(e.target.id))scoreNow()});document.addEventListener("change",e=>{if(["c1","c2","c3","c4"].includes(e.target.id))scoreNow()});
 date.valueAsDate=new Date();renderNav();renderAll();
 </script>
 </body></html>
